@@ -1,8 +1,64 @@
 @import url(common.css);
 
+/* 버튼 공통사항 */
+.btn {
+    font-weight: 700;
+    color: white;
+    text-shadow: 1px 1px 5px #000;
+
+    padding: 20px 40px;
+    /* background-color: rgba(100, 98, 93, 0.16); */
+    background-color: rgba(35, 35, 35, 0.514);
+
+    border: 5px dashed wheat;
+    border-radius: 100px;
+}
+
 /* .main-menu style */
 .main-menu {
     width: 60%;
-    min-height: 70vh;
+    height: 100vh;
     margin: 0 auto;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* 제목 */
+.main-menu .title {
+    width: fit-content;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2.5em;
+}
+
+.main-menu .title h1 {
+    word-spacing: 30px;
+    text-align: center;
+}
+
+/* 왼쪽 보글이 이미지 */
+.main-menu .title img:first-child {
+    width: 100px;
+    align-self: start;
+
+    /* 좌우반전 */
+    transform: scaleX(-1);
+}
+
+/* 오른쪽 보글이 이미지 */
+.main-menu .title img:last-child {
+    width: 100px;
+    align-self: flex-end;
+}
+
+/* 스타트 버튼 */
+.start {
+    font-size: 2em;
 }

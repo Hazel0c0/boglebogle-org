@@ -9,6 +9,9 @@
 /* body 선택자에 기본 폰트크기와 글꼴을 넣어주세요 */
 body {
     font-size: 18px;
+
+    background: url('../img/background/보블버블\ 배경화면.png') no-repeat center / cover fixed;
+    font-family: 'Ycomputer-Regular';
 }
 
 /* 추가 reset사항이 있으면 아래에 적어주세요. */
@@ -21,11 +24,6 @@ a {
     display: block;
     clear: both;
 }
-
-body {
-    background: url('../img/background/보블버블\ 배경화면.png') no-repeat center / cover fixed;
-    font-family: 'Ycomputer-Regular';
-  }
 
 /* 폰트 */
 @font-face {
