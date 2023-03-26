@@ -39,6 +39,9 @@
 }
 
 .main-menu .title h1 {
+    padding-left: 100px;
+    padding-right: 100px;
+
     word-spacing: 30px;
     text-align: center;
 }
