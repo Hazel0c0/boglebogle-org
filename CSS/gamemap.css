@@ -15,7 +15,6 @@
 .header .score{
     width: 40%;
     height: 50px;
-    /* background: skyblue; */
     margin: 0 auto;
 
     display: flex;
@@ -31,11 +30,9 @@
     text-shadow: 1px 1px 3px rgb(255, 255, 255);
 }
 .header .score li:first-child{
-
     color: #1eff00;
 }
 .header .score li:last-child{
-  
     color: #ff1515;
 }
  
@@ -55,7 +52,7 @@
 
 .sidewall li{
     width: 50px;
-    border: 1px solid #f79941;
+    /* border: 1px solid #f79941; */
 
     background: url("../img/icon/wall.png") center/50px;
     z-index: 999;
@@ -73,27 +70,27 @@
 
 .fir-floor {
     width: 100%;
-    height: 40px;
+    height: 45px;
     background: url("../img/icon/wall.png") center/50px;
 }
 
-#onthefloor *{
+#onthefloor {
     width: 100%;
     display: inline-flex;
-    /* align-content: space-between; */
+    justify-content: space-between;
     
-    border: 1px solid #f8f8f8;
+    /* border: 1px solid #f8f8f8; */
 }
 
 #onthefloor li {
-    width: 350px;
-    height: 40px;
+    width: 300px;
+    height: 45px;
     background: url("../img/icon/wall.png") center/50px;
     
     border: 1px solid #000;
 }
 #onthefloor li:nth-child(2) {
-    width : 700px;
+    width : 600px;
 }
 
 .sec-floor {
@@ -109,4 +106,13 @@
 .four-floor {
     position: absolute;
     top: 40%;
+}
+.top-floor {
+    width: 100%;
+    height: 50px;
+    background: url("../img/icon/wall.png") center/50px;
+
+    position: absolute;
+    top: 50px;
+    z-index: 9999999;
 }
