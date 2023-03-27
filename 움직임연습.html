@@ -28,11 +28,27 @@
             bottom: 0;
             left: 40px;
         }
+        .play-ground .player .waterballoon {
+            width: 20px;
+            height: 20px;
+            background: #a5e0f1;
+    
+            border-radius: 50%;
+    
+            position: absolute;
+            bottom: 0;
+            left: 30px;
+            top: 10px;
+
+            z-index: -100;
+        }
     </style>
 </head>
 <body>
     <div class="play-ground">
-        <div class="player" style="left: 40px"></div>
+        <div class="player" style="left: 40px">
+        <div class="waterballoon"></div>
+        </div>
     </div>
 
     <script>
