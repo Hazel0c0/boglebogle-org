@@ -1,19 +1,15 @@
-
+import moveCharacter from "./move.js";
+import jumpCharacter from "./jump.js";
 
 // main 메서드
 (() => {
-    document.addEventListener('keydown' ,e => {
+    const $bobby = document.getElementById('bobby');
+    
+    document.addEventListener('keydown', e => {
         const keyName = e.key;
-        const $bobby = document.getElementById('bobby');
-        switch (keyName) {
-            case 'ArrowRight':
-                $bobby.style.transform = 'scaleX(-1)';
-                $bobby.style.left = ($bobby.offsetLeft + 10) + 'px';
-                return;
-            case 'ArrowLeft':
-                $bobby.style.transform = 'scaleX(1)';
-                $bobby.style.left = ($bobby.offsetLeft - 10) + 'px';
-                return;
-        }
+        if (keyName === 'ArrowRight' || keyName === 'ArrowLeft')
+            moveCharacter($bobby, keyName);
+        else if (keyName === 'ArrowUp')
+            jumpCharacter($bobby);
     });
 })();
