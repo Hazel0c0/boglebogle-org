@@ -1,4 +1,4 @@
-@import url(common.css);
+@import url(gamemap.css);
 
 /* 게임 플레이 화면 */
 .play-ground {
@@ -20,9 +20,11 @@
     
     position: absolute;
     bottom: 0;
+    left: 50px;
     
     transition: 40ms;
 }
+
 /* 점프 */
 #bobby.jumpleft {
     background-image: url(../img/icon/bobby02.png);
