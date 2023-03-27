@@ -65,3 +65,8 @@
 .start {
     font-size: 2em;
 }
+.hovered {
+    transform: scale(1.1);
+    background-color: rgba(35, 35, 35, 0.8);
+    border: 5px dashed aqua;
+}
