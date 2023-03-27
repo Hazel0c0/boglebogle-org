@@ -1,0 +1,118 @@
+@import url(/CSS/common.css);
+
+/* 게임 플레이 화면 */
+.play-ground {
+    width: 70%;
+    height: 700px;
+    background: #000;
+    position: relative;
+    margin: 100px auto;
+
+    border-radius: 10px;
+}
+
+/* 상단 스코어 */
+.header .score{
+    width: 40%;
+    height: 50px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+}
+.header .score li{
+    padding: 10px 100px 10px 0;
+
+    font-size: 1.2em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
+.header .score li:first-child{
+    color: #1eff00;
+}
+.header .score li:last-child{
+    color: #ff1515;
+}
+ 
+/* 콘텐츠 메인 */
+
+.sidewall {
+    /* border: 1px solid #f1e8e8; */
+    width: 100%;
+    height: 650px;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+   
+    
+}
+
+.sidewall li{
+    width: 50px;
+    /* border: 1px solid #f79941; */
+
+    background: url("../img/icon/wall.png") center/50px;
+    z-index: 999;
+}
+
+
+
+/* 벽돌 바닥 */
+.gameroad {
+    list-style: none;
+
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.fir-floor {
+    width: 100%;
+    height: 45px;
+    background: url("../img/icon/wall.png") center/50px;
+}
+
+#onthefloor {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    
+    /* border: 1px solid #f8f8f8; */
+}
+
+#onthefloor li {
+    width: 300px;
+    height: 45px;
+    background: url("../img/icon/wall.png") center/50px;
+    
+    border: 1px solid #000;
+}
+#onthefloor li:nth-child(2) {
+    width : 600px;
+}
+
+.sec-floor {
+    position: absolute;
+    top: 80%;
+}
+
+.thir-floor {
+    position: absolute;
+    top: 60%;
+}
+
+.four-floor {
+    position: absolute;
+    top: 40%;
+}
+.top-floor {
+    width: 100%;
+    height: 50px;
+    background: url("../img/icon/wall.png") center/50px;
+
+    position: absolute;
+    top: 50px;
+    z-index: 9999999;
+}
