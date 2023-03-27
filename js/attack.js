@@ -12,7 +12,7 @@
         setTimeout(() => {
           console.log(`i: ${i}`)
           $waterballoon.style.left = `${i}px`
-        }, 0.5 * i);
+        },  0.7*i);
       }
     }
   })
