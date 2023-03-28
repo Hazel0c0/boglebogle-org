@@ -4,9 +4,10 @@ export default function moveCharacter({
     offsetLeft,
     offsetParent
 }, direction) {
-
+    // 벽 두께
     const WALL_WIDTH = document.querySelector('.sidewall li').clientWidth;
-
+    
+    // 움직이는 정도
     const MOVE_AMOUNT = 25;
 
     switch (direction) {
