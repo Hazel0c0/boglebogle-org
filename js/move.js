@@ -2,6 +2,19 @@ export default function moveCharacter({style, offsetWidth, offsetLeft, offsetPar
 
     const WALL_WIDTH = document.querySelector('.sidewall li').clientWidth;
 
+
+    // 지원 몬스터 kill
+    const $bobby = document.getElementById('bobby');
+    const $mst = document.querySelector('.monsterkArea');
+
+    if($bobby.offsetLeft>=$mst.offsetLeft){
+        console.log('meet');
+        $mst.style.zIndex='-100';
+    
+    
+      };
+    // end kill
+    
     switch (direction) {
         case 'ArrowRight':
             style.transform = 'scaleX(-1)';
