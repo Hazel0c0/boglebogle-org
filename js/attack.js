@@ -4,6 +4,7 @@ export default function attack({
   style
 }) {
   makeBubble(offsetTop, offsetLeft, style);
+  setTimeout(() => style.backgroundImage = 'url(../img/icon/bobby01.png)', 500);
 }
 
 // 적을 감지하는 함수
@@ -18,6 +19,10 @@ function touchesMonster($bubble, $monster) {
 
 // 방울 만드는 함수들
 function makeBubble(offsetTop, offsetLeft, style) {
+
+  /* 공격 모션 */
+  style.backgroundImage = 'url(../img/icon/bobby03.png)';
+
   const $playGround = document.querySelector('.content');
 
   const $bubble = document.createElement('div');
