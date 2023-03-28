@@ -34,7 +34,7 @@
     border-radius: 50%;
     background: aqua;
 
-    animation: bubbleMoving 1s forwards;
+    /* animation: bubbleMoving 1s forwards; */
 }
 @keyframes bubbleMoving {
     0% {
