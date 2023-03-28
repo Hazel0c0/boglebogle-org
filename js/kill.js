@@ -5,7 +5,7 @@
 
 // (() => {
   const $bobby = document.getElementById('bobby');
-  const $mst = document.querySelector('.monsterArea');
+  const $mst = document.querySelector('.monster');
 
   console.log('연동');
   console.log($bobby.offsetLeft);
