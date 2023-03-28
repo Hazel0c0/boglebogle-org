@@ -30,34 +30,16 @@ function moveBubble($bubble, isLeft) {
   if (isLeft()) {
     for (let i = 0; i < 20; i++) {
       setTimeout(() => {
+        if ($bubble.offsetLeft < 50) return;
         $bubble.style.left = `${$bubble.offsetLeft - i}px`;
       }, 20 * i);
     }
   } else {
     for (let i = 0; i < 20; i++) {
       setTimeout(() => {
+        if ($bubble.offsetLeft + $bubble.offsetWidth > $bubble.offsetParent.offsetWidth - 50) return;
         $bubble.style.left = `${$bubble.offsetLeft + i}px`;
       }, 20 * i);
     }
   }
 }
-
-// (() => {
-
-//   document.addEventListener('keyup', e => {
-//     const $waterballoon = document.querySelector('.waterballoon');
-//     // if (e.key !== 'b') return;
-
-//     if (e.key === 'b') {
-
-//       $waterballoon.style.zIndex = '999';
-
-//       for (let i = 20; i < 850; i++) {
-//         setTimeout(() => {
-//           console.log(`i: ${i}`)
-//           $waterballoon.style.left = `${i}px`
-//         },  0.7*i);
-//       }
-//     }
-//   })
-// })();
