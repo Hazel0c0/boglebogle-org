@@ -10,6 +10,18 @@ export default function moveCharacter({
     // 움직이는 정도
     const MOVE_AMOUNT = 25;
 
+    // 지원 몬스터 kill
+    const $bobby = document.getElementById('bobby');
+    const $mst = document.querySelector('.monsterkArea');
+
+    if($bobby.offsetLeft>=$mst.offsetLeft){
+        console.log('meet');
+        $mst.style.zIndex='-100';
+    
+    
+      };
+    // end kill
+
     switch (direction) {
         case 'ArrowRight':
             style.transform = 'scaleX(-1)';

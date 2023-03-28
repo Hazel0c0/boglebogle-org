@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="CSS/gameplay.css">
+    <link rel="stylesheet" href="CSS/monsterAttack.css">
 
     <script src="js/gameplay.js" type="module" defer></script>
+    <script src="js/monsterMove.js" type="module" defer></script>
+    <script src="js/kill.js" type="module" defer></script>
+
 </head>
 <body>
     <div class="wrap">
@@ -15,8 +19,8 @@
              <!-- 상단 스코어 -->
              <div class="header">
                 <ul class="score">
-                    <li>My Score |  .</li>
-                    <li>Top Score |  9999.</li>
+                    <li>My Score |</li>
+                    <li>Top Score |</li>
                 </ul>
             </div>
 
@@ -39,11 +43,17 @@
 
                     <ul id="onthefloor" class="floor sec-floor" >
                         <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                     <ul id="onthefloor" class="floor thir-floor">
                         <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                     <ul id="onthefloor" class="floor four-floor">
+                        <li></li>
+                        <li></li>
                         <li></li>
                     </ul>   
                     <ul class="floor top-floor">
@@ -54,7 +64,10 @@
                 <!-- 플레이어 -->
                 <div id="bobby"></div>
 
-                <div class="monster"></div>
+                <!-- 몬스터 -->
+                <div class="monsterkArea">
+                    <div class="monster"></div>
+                </div>
             </div>
         </div>
     </div>
