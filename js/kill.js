@@ -5,20 +5,14 @@
 
 // (() => {
   const $bobby = document.getElementById('bobby');
-  const $mst = document.querySelector('.monster');
-
-  console.log('연동');
-  console.log($bobby.offsetLeft);
-  console.log($mst.offsetLeft);
-
+  const $monster = document.querySelector('.monster');
 
   document.onclick=()=>{
     console.log($bobby.offsetLeft);
-    console.log($mst.offsetLeft);
+    console.log($monster.offsetLeft);
   }
 
-
-  if($bobby.offsetLeft>=$mst.offsetLeft){
+  if($bobby.offsetLeft>=$monster.offsetLeft){
     console.log('좌표 성공!!');
 
   };
