@@ -1,16 +1,22 @@
-export default function jumpCharacter({classList, style}) {
-    /* 현재 점프중이면 리턴 */
-    if (classList.contains('jumpright') || classList.contains('jumpleft'))
-        return;
-
-    /* 점프 */
-    if (style.transform === 'scaleX(1)')
-        classList.add('jumpright');
-    else 
-        classList.add('jumpleft');
-
-    /* 착지 */
-    setTimeout(() => {
-        classList.remove('jumpright', 'jumpleft');
-    }, 1000);
+function canGoUp(offsetTop) {
+    return [650, 510, 420, 370].indexOf(offsetTop) !== -1;
 }
+
+function jumpCharacter({style, offsetTop}) {
+    /* 땅 위가 아니면 리턴 */
+    if (!canGoUp(offsetTop)) return;
+
+    style.top = (offsetTop - 140) + 'px';
+}
+
+function canGoDown(offsetTop) {
+    return [510, 420, 370, 230].indexOf(offsetTop) !== -1;
+}
+
+function downJumpCharacter({style, offsetTop}) {
+    if (!canGoDown(offsetTop)) return;
+
+    style.top = (offsetTop + 140) + 'px';
+}
+
+export {jumpCharacter, downJumpCharacter};

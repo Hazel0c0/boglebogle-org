@@ -19,44 +19,10 @@
     transform: scaleX(-1);
     
     position: absolute;
-    bottom: 0;
-    left: 50px;
-    
-    transition: 40ms;
-}
+    top: 650px;
+    left: 50px;   
 
-/* 점프 */
-#bobby.jumpleft {
-    background-image: url(../img/icon/bobby02.png);
-    transform: scaleX(1);
-
-    animation: jumpingleft 1s ease-in-out;
-}
-#bobby.jumpright {
-    background-image: url(../img/icon/bobby02.png);
-    transform: scaleX(-1);
-    
-    animation: jumpingright 1s ease-in-out;
-}
-@keyframes jumpingright {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-100px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-@keyframes jumpingleft {
-    0% {
-        transform: translateY(0) scaleX(-1);
-    }
-    50% {
-        transform: translateY(-100px) scaleX(-1);
-    }
-    100% {
-        transform: translateY(0) scaleX(-1);
-    }
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(0.5, 0.75, 0.95);
+    transition-property: top;
 }
