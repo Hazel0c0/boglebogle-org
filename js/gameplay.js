@@ -15,6 +15,6 @@ import attack from "./attack.js";
         else if (keyName === 'ArrowDown')
             downJumpCharacter($bobby);
         else if (keyName === ' ')
-            attack();
+            attack($bobby);
     });
 })();
