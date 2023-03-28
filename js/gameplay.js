@@ -1,5 +1,5 @@
 import moveCharacter from "./move.js";
-import jumpCharacter from "./jump.js";
+import {jumpCharacter, downJumpCharacter} from "./jump.js";
 import attack from "./attack.js";
 
 // main 메서드
@@ -12,6 +12,8 @@ import attack from "./attack.js";
             moveCharacter($bobby, keyName);
         else if (keyName === 'ArrowUp')
             jumpCharacter($bobby);
+        else if (keyName === 'ArrowDown')
+            downJumpCharacter($bobby);
         else if (keyName === ' ')
             attack();
     });
