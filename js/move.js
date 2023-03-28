@@ -6,30 +6,28 @@ export default function moveCharacter({
 }, direction) {
     // 벽 두께
     const WALL_WIDTH = document.querySelector('.sidewall li').clientWidth;
-    
+
     // 움직이는 정도
     const MOVE_AMOUNT = 25;
 
     switch (direction) {
         case 'ArrowRight':
             style.transform = 'scaleX(-1)';
-            for (let i = 0; i < MOVE_AMOUNT; i++) {
+            for (let i = 1; i <= MOVE_AMOUNT; i++) {
                 setTimeout(() => {
                     if (offsetLeft + offsetWidth + i > -WALL_WIDTH + offsetParent.offsetWidth)
                         return;
-                    else
-                        style.left = (offsetLeft + i) + 'px';
+                    style.left = (offsetLeft + i) + 'px';
                 }, 1);
             }
             return;
         case 'ArrowLeft':
             style.transform = 'scaleX(1)';
-            for (let i = 0; i < MOVE_AMOUNT; i++) {
+            for (let i = 1; i <= MOVE_AMOUNT; i++) {
                 setTimeout(() => {
                     if (offsetLeft - i - WALL_WIDTH < 0)
                         return;
-                    else
-                        style.left = (offsetLeft - i) + 'px';
+                    style.left = (offsetLeft - i) + 'px';
                 }, 1);
             }
             return;

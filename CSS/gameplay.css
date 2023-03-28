@@ -17,10 +17,10 @@
     width: 50px;
     height: 50px;
     transform: scaleX(-1);
-    
+
     position: absolute;
     top: 650px;
-    left: 50px;   
+    left: 50px;
 
     transition: 0.5s;
     transition-timing-function: cubic-bezier(0.5, 0.75, 0.95);
@@ -33,4 +33,19 @@
     height: 50px;
     border-radius: 50%;
     background: url(../img/icon/bubble.jpg) no-repeat center / cover;
+}
+
+/* 몬스터 */
+.monster {
+    background: url(../img/icon/enemy-drunk01.png) no-repeat center / 100px 100px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 600px;
+}
+
+/* 몬스터 물방울 갇혔을 때 */
+.monster.getBubbled {
+    background-image: url(../img/icon/enemy-drunk04.png);
 }

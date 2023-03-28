@@ -6,8 +6,15 @@ export default function attack({
   makeBubble(offsetTop, offsetLeft, style);
 }
 
-// 적을 감지하는 함수들
+// 적을 감지하는 함수
+function touchesMonster($bubble, $monster) {
 
+  return ($bubble.offsetLeft > $monster.offsetLeft - 20 
+              && $bubble.offsetLeft < $monster.offsetLeft + 20)
+    && ($bubble.offsetTop > $monster.offsetTop - 20
+              && $bubble.offsetTop < $monster.offsetTop + 20);
+  
+}
 
 // 방울 만드는 함수들
 function makeBubble(offsetTop, offsetLeft, style) {
@@ -35,22 +42,38 @@ function moveBubble($bubble, isLeft) {
   // 물방울 움직이는 거리
   const BUBBLE_MOVE_AMOUNT = 25;
 
+  // 적 DOM
+  // 지금은 하나지만 여러 적의 경우 배열로 받아서 처리할 예정
+  const $monster = document.querySelector('.monster');
+
   if (isLeft()) {
-    for (let i = 0; i < BUBBLE_MOVE_AMOUNT; i++) {
+    for (let i = 1; i <= BUBBLE_MOVE_AMOUNT; i++) {
       setTimeout(() => {
-        if ($bubble.offsetLeft < 50) {
+        
+        if ($bubble.offsetLeft < 50) return;
+    
+        if (touchesMonster($bubble, $monster)) {
+          $monster.classList.add('getBubbled');
           return;
         }
+
         $bubble.style.left = `${$bubble.offsetLeft - i}px`;
+
       }, 20 * i);
     }
   } else {
-    for (let i = 0; i < BUBBLE_MOVE_AMOUNT; i++) {
+    for (let i = 1; i <= BUBBLE_MOVE_AMOUNT; i++) {
       setTimeout(() => {
-        if ($bubble.offsetLeft + $bubble.offsetWidth > $bubble.offsetParent.offsetWidth - 50) {
+
+        if ($bubble.offsetLeft + $bubble.offsetWidth > $bubble.offsetParent.offsetWidth - 50) return;
+        
+        if (touchesMonster($bubble, $monster)) {
+          $monster.classList.add('getBubbled');
           return;
         }
+
         $bubble.style.left = `${$bubble.offsetLeft + i}px`;
+
       }, 20 * i);
     }
   }
