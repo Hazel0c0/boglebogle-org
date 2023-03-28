@@ -1,7 +1,14 @@
 const $score =0;
 
 function initEvent(){
-    $('#mosterDie').keyup(function(){
+    $('#kill').keyup(function(){
         addScore();
     })
+}
+
+function addScore() {
+    if(playing==true){
+        count++;
+        $score.html(count);
+    }
 }
