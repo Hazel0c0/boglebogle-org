@@ -56,42 +56,21 @@
   /* background-color: olive; */
   width: 50px;
   height: 50px;
-  /* transform: scaleX(-1); */
-
-
-  /* transition-property: width, background;
-  transition-duration: 1s, 2s;
-  transition-timing-function: steps(5);
-  transition: 1s; */
-
-
 }
 
 /* 몬스터 이동 모션 */
 .monsterMove {
-/* .monster:hover { */
-  /* width: 650px;
-  height: 50px;
-  transform: scaleX(-1); */
 
-  animation-name: grow-up;
-  animation-duration: 2s;
-  /* 애니메이션 반복 횟수 */
-  animation-iteration-count: infinite;
-  animation-delay: 1s;
-  animation-timing-function: linear;
-
-  /* 단축 속성 */
-  animation: grow-up 1s infinite linear alternate;
+  /* animation: move 1s infinite linear alternate; */
 }
 
 /* 애니메이션 효과 만들기 */
-@keyframes grow-up {
+@keyframes move {
   0% {
-    width: 50px;
+    
   }
 
   100% {
-    width: 600px;
+    transform: translateX(300px);
   }
 }
