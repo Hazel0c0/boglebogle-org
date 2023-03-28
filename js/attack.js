@@ -1,32 +1,44 @@
-export default function attack({offsetTop, offsetLeft, style}) {
-    makeBubble(offsetTop, offsetLeft, style);
+export default function attack({
+  offsetTop,
+  offsetLeft,
+  style
+}) {
+  makeBubble(offsetTop, offsetLeft, style);
 }
 
 function makeBubble(offsetTop, offsetLeft, style) {
-    const $playGround = document.querySelector('.content');
+  const $playGround = document.querySelector('.content');
 
-    const $bubble = document.createElement('div');
-    $bubble.classList.add('bubble');
-    $bubble.style.position = 'absolute';
-    $bubble.style.top = offsetTop + 'px';
+  const $bubble = document.createElement('div');
+  $bubble.classList.add('bubble');
+  $bubble.style.position = 'absolute';
+  $bubble.style.top = offsetTop + 'px';
 
-    const isRight = () => style.transform === 'scaleX(1)';
+  const isLeft = () => style.transform === 'scaleX(1)';
 
-    if (isRight())
-        $bubble.style.left = (offsetLeft - 50) + 'px';
-    else
-        $bubble.style.left = (offsetLeft + 50) + 'px';
-    
-    $playGround.appendChild($bubble);
+  if (isLeft())
+    $bubble.style.left = (offsetLeft - 50) + 'px';
+  else
+    $bubble.style.left = (offsetLeft + 50) + 'px';
 
-    moveBubble($bubble, isRight);
+  $playGround.appendChild($bubble);
+
+  moveBubble($bubble, isLeft);
 }
 
-function moveBubble($bubble, isRight) {
-  for (let i = 0; i < 20; i++) {
-    setTimeout(() => {
-      $bubble.style.left = `${$bubble.offsetLeft + i}px`;
-    }, 10 * i);
+function moveBubble($bubble, isLeft) {
+  if (isLeft()) {
+    for (let i = 0; i < 20; i++) {
+      setTimeout(() => {
+        $bubble.style.left = `${$bubble.offsetLeft - i}px`;
+      }, 20 * i);
+    }
+  } else {
+    for (let i = 0; i < 20; i++) {
+      setTimeout(() => {
+        $bubble.style.left = `${$bubble.offsetLeft + i}px`;
+      }, 20 * i);
+    }
   }
 }
 
