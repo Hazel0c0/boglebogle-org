@@ -19,6 +19,8 @@
     height: 50px;
     margin: 0 auto;
 
+    line-height: 27px;
+
     display: flex;
     justify-content: space-between;
     text-align: left;
@@ -28,7 +30,7 @@
     padding: 10px 100px 10px 0;
 
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: 50px;
     text-shadow: 1px 1px 3px rgb(255, 255, 255);
 
     display: inline-block;
