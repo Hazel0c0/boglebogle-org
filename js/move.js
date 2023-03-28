@@ -13,7 +13,7 @@ export default function moveCharacter({
     // 지원 몬스터 kill
 
     const $bobby = document.getElementById('bobby');
-    const $monster = document.querySelector('.area');
+    const $monster = document.querySelector('.monsters');
 
     console.log($monster);
 

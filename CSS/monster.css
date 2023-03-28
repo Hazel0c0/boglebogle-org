@@ -1,0 +1,49 @@
+
+/* 몬스터 */
+.wrap .monster {
+  height: 50px;
+  width: 400px;
+  left: 400px;
+
+  
+  background: url(../img/icon/enemy-drunk01.png) no-repeat center / 100px 100px;
+  /* background-color: olive; */
+  width: 50px;
+  height: 50px;
+}
+.area1{
+  position: absolute;
+  top: 650px;
+}
+
+.area2 {
+  position: absolute;
+  top: 511px;
+  right: 200px;
+}
+.area3 {
+  position: absolute;
+  top: 372px;
+}
+.area4{
+  position: absolute;
+  top: 231px;
+}
+
+/* 몬스터 이동 모션 */
+.monsterMove {
+  position: absolute;
+  top: 0;
+
+  animation: move 1s infinite linear alternate;
+}
+
+/* 애니메이션 효과 만들기 */
+@keyframes move {
+  0% {
+  }
+
+  100%{
+    transform: translateX(300px);
+  }
+}
