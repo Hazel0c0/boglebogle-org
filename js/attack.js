@@ -28,18 +28,29 @@ function makeBubble(offsetTop, offsetLeft, style) {
 
 function moveBubble($bubble, isLeft) {
   if (isLeft()) {
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 25; i++) {
       setTimeout(() => {
-        if ($bubble.offsetLeft < 50) return;
+        if ($bubble.offsetLeft < 50) {
+          return;
+        }
         $bubble.style.left = `${$bubble.offsetLeft - i}px`;
       }, 20 * i);
     }
   } else {
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < 25; i++) {
       setTimeout(() => {
-        if ($bubble.offsetLeft + $bubble.offsetWidth > $bubble.offsetParent.offsetWidth - 50) return;
+        if ($bubble.offsetLeft + $bubble.offsetWidth > $bubble.offsetParent.offsetWidth - 50) {
+          return;
+        }
         $bubble.style.left = `${$bubble.offsetLeft + i}px`;
       }, 20 * i);
     }
   }
+  removeBubble($bubble);
+}
+
+function removeBubble($bubble) {
+  setTimeout(() => {
+    $bubble.parentElement.removeChild($bubble);
+  }, 700);
 }
