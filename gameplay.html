@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="CSS/gameplay.css">
 
-    <script src="js/gameplay.js" type="module" defer></script>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="CSS/gameplay.css">
+  <link rel="stylesheet" href="CSS/monsterAttack.css">
+
+  <script src="js/gameplay.js" type="module" defer></script>
+  <script src="js/kill.js" type="module" defer></script>
 </head>
+
 <body>
+
     <div class="wrap">
         <div class="play-ground">
              <!-- 상단 스코어 -->
@@ -57,6 +62,22 @@
                 <div class="monster"></div>
             </div>
         </div>
-    </div>
+
+        <!-- 플레이어 -->
+        <div id="bobby"></div>
+
+        <!-- 몬스터 -->
+      <div class="area">
+        <div class="monsterArea area1"></div>
+        <div class="monsterArea area1"></div>
+        <div class="monsterArea area2"></div>
+        <div class="monsterArea area2"></div>
+        <div class="monsterArea area3"></div>
+        <div class="monsterArea area3"></div>
+        <div class="monsterArea area4"></div>
+        <div class="monsterArea area4"></div>
+      </div>
+
 </body>
+
 </html>

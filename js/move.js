@@ -11,15 +11,25 @@ export default function moveCharacter({
     const MOVE_AMOUNT = 25;
 
     // 지원 몬스터 kill
-    const $bobby = document.getElementById('bobby');
-    const $mst = document.querySelector('.monsterkArea');
 
-    if($bobby.offsetLeft>=$mst.offsetLeft){
+    const $bobby = document.getElementById('bobby');
+    const $monster = document.querySelector('.area');
+
+    console.log($monster);
+
+    $monster.classList.add('monsterMove');
+
+    // 몬스터 죽이기
+    if($bobby.offsetLeft>=$monster.offsetLeft){
         console.log('meet');
-        $mst.style.zIndex='-100';
-    
-    
+        
+        // $monster.style.zIndex='-100';
+  
+        // $mst.style.removechild
       };
+
+    
+
     // end kill
 
     switch (direction) {

@@ -3,10 +3,9 @@
 // plan A) 좌표 겹쳐지면 모션
 
 
-//보비랑 몬스터 불러오기
 // (() => {
   const $bobby = document.getElementById('bobby');
-  const $mst = document.querySelector('.monsterkArea');
+  const $mst = document.querySelector('.monsterArea');
 
   console.log('연동');
   console.log($bobby.offsetLeft);
