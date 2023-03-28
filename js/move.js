@@ -10,8 +10,9 @@ export default function moveCharacter({
     // 움직이는 정도
     const MOVE_AMOUNT = 25;
 
-    // 지원 몬스터 kill
-
+    // 지원
+    
+    // 몬스터 죽이기
     const $bobby = document.getElementById('bobby');
     const $monster = document.querySelector('.monsters');
 
