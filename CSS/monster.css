@@ -20,7 +20,7 @@
 .area1-2{
   position: absolute;
   top: 650px;
-  z-index: -100;
+  /* z-index: -100; */
 }
 
 .area2 {

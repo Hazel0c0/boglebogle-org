@@ -1,4 +1,31 @@
-// for  문 안에 settimeout
+(() => {
+  function move() {
+    console.log('+');
+    const $monster = document.querySelector('.area1');
+
+// 간격이 점점 넓어짐..
+      setInterval(function() {
+        $monster.style.left = `${$monster.offsetLeft + 10}px`;
+        console.log($monster.style.left);
+        i++;
+        if (i===20) clearInterval(interval);
+      }, 200);
+
+      $monster.style.left='400px';
+  }
+  function move2() {
+    console.log('+');
+    const $monster2 = document.querySelector('.area1-2');
+
+      setInterval(function () {
+        $monster2.style.left = `${$monster2.offsetLeft - 10}px`;
+      }, 200);
+  }
+  setInterval(move, 3000);
+  // setInterval(move2, 10000);
+
+})();
+
 /*
 (() => {
   const $monster = document.querySelector('.monster');
@@ -136,3 +163,4 @@ setInterval
 
 
 })();
+*/
