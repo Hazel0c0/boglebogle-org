@@ -80,6 +80,14 @@
 }
 
 /* 몬스터 물방울 갇혔을 때 */
-.monster.getBubbled {
+/* 우선순위 높히려 자세하게 씀 */
+.wrap .content .monster.getBubbled { 
     background-image: url(../img/icon/enemy-drunk04.png);
+    transition: 1s;
+
+    width: 60px;
+    height: 60px;
+    background-size: 120px 120px;
+
+    transform: translateY(-20px);
 }

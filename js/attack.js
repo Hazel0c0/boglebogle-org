@@ -49,7 +49,8 @@ function moveBubble($bubble, isLeft) {
 
   // 적 DOM
   // 지금은 하나지만 여러 적의 경우 배열로 받아서 처리할 예정
-  const $monster = document.querySelector('.monster');
+  const $monsters = [...document.querySelectorAll('.monster')];
+  const $monster = $monsters[0];
 
   if (isLeft()) {
     for (let i = 1; i <= BUBBLE_MOVE_AMOUNT; i++) {
