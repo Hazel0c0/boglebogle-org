@@ -7,6 +7,8 @@ export default function attack({
   setTimeout(() => style.backgroundImage = 'url(../img/icon/bobby01.png)', 500);
 }
 
+// 가장 가까운 적을 찾는 함수
+
 // 적을 감지하는 함수
 function touchesMonster($bubble, $monster) {
 
