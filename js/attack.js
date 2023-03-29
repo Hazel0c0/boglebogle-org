@@ -87,6 +87,9 @@ function moveBubble($bubble, isLeft) {
 
 function removeBubble($bubble) {
   setTimeout(() => {
+    $bubble.classList.add('getUp');
+  }, 600);
+  setTimeout(() => {
     $bubble.parentElement.removeChild($bubble);
-  }, 700);
+  }, 3600);
 }
