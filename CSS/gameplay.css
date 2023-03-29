@@ -11,6 +11,11 @@
     border-radius: 10px;
 }
 
+/* 오디오 */
+audio {
+    display: none;
+}
+
 /* 캐릭터 아이콘 주변의 불필요한 공백 제거 */
 #bobby {
     background: url(../img/icon/bobby01.png) no-repeat center / 100px 100px;
