@@ -17,6 +17,12 @@
   position: absolute;
   top: 650px;
 }
+.area1-2{
+  position: absolute;
+  top: 650px;
+  z-index: -100;
+}
+
 .area2 {
   position: absolute;
   top: 510px;

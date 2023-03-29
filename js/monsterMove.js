@@ -1,53 +1,138 @@
-// (()=>{
-//   const $monster = document.querySelector('.monster');
+// for  문 안에 settimeout
+/*
+(() => {
+  const $monster = document.querySelector('.monster');
 
-  
-//   for(let i=0; i<10; i++ ){
-//     setTimeout(() => { 
-//       $monster.style.transform= `translate(${10*i}px)`;
-//       console.log($monster.style.left); 
-//       console.log('+');
-//     }, 500);
-//   }
-// });
+  for (let i = 0; i < 20; i++) {
+    for (let i = 1; i <= 20; i++) {
+      console.log('+');
+      setTimeout(function() {
+      $monster.style.left = `${$monster.offsetLeft + 10}px`;
+    }, 1000);
+    }
+    for (let i = 1; i <= 20; i++) {
+      console.log('-');
+      setTimeout(function() {
+      $monster.style.left = `${$monster.offsetLeft - 10}px`;
+    }, 1000);
+    }
+  }
+})();
+
+*/
 
 
-
+//  if문 안됨
+/*
 (() => {
 
   const $monster = document.querySelector('.monster');
 
-  for (let i = 1; i <= 5; i++) {
-    setInterval(() => {
+  let Change = true;
+  if (Change) {
+    for (let i = 1; i <= 20; i++) {
+      setTimeout(() => {
+        console.log('+');
+        $monster.style.left = `${$monster.offsetLeft + i}px`;
+      }, 20 * i);
+      Change = false;
+    }
+  }
 
-      $monster.style.left = `${$monster.offsetLeft + i}px`;
-
-    }, 2000);
-
-    // clearInterval();
+  if (!Change) {
+    for (let i = 1; i <= 20; i++) {
+      setTimeout(() => {
+        console.log('-');
+        $monster.style.left = `${$monster.offsetLeft - i}px`;
+      }, 20 * i);
+    }
   }
 })();
 
-
-
+*/
 /*
-    setTimeout(function() {
-      console.log('Works!');
-    }, 1000);
+(() => {
 
+  const $monster = document.querySelector('.area1');
 
-    // if ($monster.style.left === `475px`) {
-    //   console.log('if');
-    for (let i = 1; i <= 5; i++) {
+  for (let i = 1; i <= 20; i++) {
+    setTimeout(() => {
+      console.log('+');
+      $monster.style.left = `${$monster.offsetLeft + i}px`;
+    }, 20 * i);
+  }
+
+  //610
+  const $monsterBack = document.querySelector('.area1-2');
+
+  for (let i = 1; i <= 20; i++) {
+    setTimeout(() => {
+      console.log('+');
+      $monsterBack.style.left = `${$monsterBack.offsetLeft + i}px`;
+    }, 20 * i);
+  }
+})();
+*/
+/*
+(() => {
+
+  const $monster = document.querySelector('.monster');
+setInterval
+    for (let i = 1; i <= 20; i++) {
       setTimeout(() => {
+        console.log('+');
+        $monster.style.left = `${$monster.offsetLeft + i}px`;
+      }, 20 * i);
 
-        // if ($bubble.offsetLeft + $bubble.offsetWidth 
-        //       > $bubble.offsetParent.offsetWidth - 50) return;
-
-
+    }
+  }, 1000);
+  setInterval(() => {
+    for (let i = 1; i <= 20; i++) {
+      setTimeout(() => {
+        console.log('-');
         $monster.style.left = `${$monster.offsetLeft - i}px`;
-
       }, 20 * i);
     }
-    // }
+  }, 1000);
+})();
+
 */
+/*
+
+(() => {
+  const $monster = document.querySelector('.area1');
+  let n = 0;
+  //오른쪽 이동
+
+  setTimeout(() => {
+    setIn terval(() => {
+      console.log('-');
+      $monster.style.left = `${$monster.offsetLeft +10}px`;
+    }, 500);
+  }, 3000);
+
+  if (n === 3) {
+    console.log('-');
+  }
+})();
+
+*/
+/*
+(() => {
+  const $monster = document.querySelector('.area1');
+  let n = 0,x=3;
+  //오른쪽 이동
+
+
+  setInt erval(() => {
+    console.log('-');
+    $monster.style.left = `${$monster.offsetLeft +10}px`;
+    
+    if (n === x) {
+      console.log('-');
+      x+=x;
+    }
+  }, 500);
+
+
+})();
