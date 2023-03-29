@@ -1,6 +1,7 @@
 import moveCharacter from "./move.js";
 import {jumpCharacter, downJumpCharacter} from "./jump.js";
 import attack from "./attack.js";
+import addScore from "./addscore.js";
 
 // main 메서드
 (() => {
@@ -19,5 +20,9 @@ import attack from "./attack.js";
             
         else if (keyName === ' ')
             attack($bobby);
+
+        else if (keyName === '0')
+            addScore();
+            
     });
 })();

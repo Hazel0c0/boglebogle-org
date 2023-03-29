@@ -21,11 +21,13 @@ export default function moveCharacter({
     // 몬스터 죽이기
     if($bobby.offsetLeft>=$monster.offsetLeft){
         console.log('meet');
-        
+        // addScore();
         // $monster.style.zIndex='-100';
   
         // $mst.style.removechild
       };
+
+
 
     // end kill
 
@@ -51,4 +53,8 @@ export default function moveCharacter({
             }
             return;
     }
+
+
+
+    // 
 }
