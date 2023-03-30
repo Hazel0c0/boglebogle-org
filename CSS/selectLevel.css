@@ -17,6 +17,9 @@
   left: 50%;
   transform: translateX(-50%);
 }
+.title #userId{
+  color: aqua;
+}
 
 /* 오디오 */
 audio {
