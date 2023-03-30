@@ -17,11 +17,16 @@
 selectLevel.html 에 userId 가져오기, 난이도 버튼 input 태그로 만들어서 form으로 gameplay.html에 넘겨주기
 gameplay.html 에서 userId gameover.html에 넘겨주기
 
-index.html 이랑 selectLevel.html 에 노래 넣거나 selectLevel.html에만 넣기
 
-userId 입력 마무리
 
 --------
+
+[ 4day ]
+
+-지송
+index.html 이랑 selectLevel.html 에 노래 넣거나 selectLevel.html에만 넣기
+userId 입력 마무리
+
 
 [ 3day ]
 몬스터 죽는 함수[kill] / 캐릭터 죽는 함수 나누기(if)[die]
