@@ -29,4 +29,6 @@ function makeSingleMonster(top, left) {
     $monster.style.top = `${top}px`;
 
     $playGround.appendChild($monster);
+
+    
 }

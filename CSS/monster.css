@@ -1,48 +1,49 @@
 
-/* 몬스터 공통사항 - 사이즈 */
 .wrap .monster {
-  /* height: 50px;
-  width: 400px;
-  left: 400px; */
-
-  
   background: url(../img/icon/enemy-drunk01.png) no-repeat center / 100px 100px;
-  /* background-color: olive;
-  width: 50px;
-  height: 50px; */
+}
+
+@keyframes m_die {
+  0% { 속성: 값; }
+  50% { 속성: 값; }
+  100% {속성: 값; }
 }
 
 
 .area1{
+  /* 가장빠름 */
   position: absolute;
   top: 670px;
 
 
   transform: translate(-50%, -50%);
-  transition: 1s linear;
+  transition: 0.5s linear;
 }
 .area1-2{
   position: absolute;
   top: 670px;
-  left: 600px;
  
   transform: translate(-50%, -50%);
-  transition: 1s linear;
+  transition: 1s ease-in-out;
 }
 
-.area2 {
+.area2 { 
+  /* 느리게 */
   position: absolute;
-  top: 510px;
-  /* right: 200px; 안먹힘 */
+  top: 530px;
+
+  transform: translate(-50%, -50%);
+  transition: 2s ease-out;
 }
-.area3 {
+
+/* .area3 {
   position: absolute;
   top: 370px;
 }
 .area4{
   position: absolute;
   top: 230px;
-}
+} */
 /* 차이 140px  */
 
 

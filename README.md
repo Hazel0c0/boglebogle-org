@@ -11,11 +11,21 @@
 라이프3개
 몬스터 뒤집기(트렌지션 : 프로퍼티(속성값))
 
---------
+
+[ 4day ]
+
+-지송
+index.html 이랑 selectLevel.html 에 노래 넣거나 selectLevel.html에만 넣기, gameover.html에 노래 넣기
+userId 입력 마무리
+gameplay.html 에서 userId gameover.html에 넘겨주기
+
+-진호
+방울에 갇힌 몬스터한테 더이상 공격 안되도록 하기
+몬스터 다 죽으면 다시 생성
+selectLevel.html 에 userId 가져오기, 난이도 버튼 input 태그로 만들어서 form으로 gameplay.html에 넘겨주기
 
 ### 3day
- 
-몬스터 죽는 함수[kill] / 캐릭터 죽는 함수[die] 나누기(if)
+몬스터 죽는 함수[kill] / 캐릭터 죽는 함수 나누기(if)[die]
 
 -진호
 물방울 이펙트 - 완
