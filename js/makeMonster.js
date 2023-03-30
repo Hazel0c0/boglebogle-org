@@ -2,15 +2,15 @@
 export default function makeMonsters(difficulty = 1) {
 
     switch (difficulty) {
-        case 3:
+        case "상":
             for (let i = 0; i < 4; i++) {
                 makeSingleMonster(650 - 140 * i, 800);
             }
-        case 2:
+        case "중":
             for (let i = 0; i < 4; i++) {
                 makeSingleMonster(650 - 140 * i, 600);
             }
-        case 1:
+        case "하":
             for (let i = 0; i < 4; i++) {
                 makeSingleMonster(650 - 140 * i, 400);
             }
