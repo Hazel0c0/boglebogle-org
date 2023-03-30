@@ -18,6 +18,12 @@
   transform: translateX(-50%);
 }
 
+/* 오디오 */
+audio {
+  display: none;
+}
+
+
 /* 버튼 공통사항 */
 .btn {
   font-weight: 700;
@@ -55,4 +61,11 @@
   /* position */
   display: block;
   margin: 20px auto;
+}
+
+.level {
+  width: 100%;
+  font-size: 0.8em;
+
+  font-family: 'Ycomputer-Regular';
 }

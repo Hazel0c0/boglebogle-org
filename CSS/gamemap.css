@@ -15,18 +15,20 @@
 /* 상단 스코어 */
 .header .score{
     /* background: pink; */
-    width: 40%;
+    width: 680px;
     height: 50px;
     margin: 0 auto;
 
     line-height: 27px;
 
     display: flex;
-    justify-content: space-between;
-    text-align: left;
+    justify-content: space-around;
+    text-align: center;
     
 }
 .header .score li{
+    /* border: 1px solid #ffffff; */
+    width: 290px;
     padding: 10px 100px 10px 0;
 
     font-size: 1.2em;
@@ -34,7 +36,6 @@
     text-shadow: 1px 1px 3px rgb(255, 255, 255);
 
     display: inline-block;
-    /* width: 700vw; */
     white-space: nowrap;
 }
 .header .score li:first-child{

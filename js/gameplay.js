@@ -1,11 +1,13 @@
 import moveCharacter from "./move.js";
 import {
-  jumpCharacter,
-  downJumpCharacter
+
+    jumpCharacter,
+    downJumpCharacter
 } from "./jump.js";
 import attack from "./attack.js";
 import {
-  getDifficulty
+    getDifficulty, 
+    getUserId
 } from "./getParameter.js";
 import makeMonsters from "./makeMonster.js";
 import addScore from "./addscore.js";
@@ -24,15 +26,26 @@ import moveMonster from "./monsterMove.js";
     if (keyName === 'ArrowRight' || keyName === 'ArrowLeft')
       moveCharacter($bobby, keyName);
     else if (keyName === 'ArrowUp')
-      jumpCharacter($bobby);
+            jumpCharacter($bobby);
     else if (keyName === 'ArrowDown')
-      downJumpCharacter($bobby);
+            downJumpCharacter($bobby);
 
     else if (keyName === ' ')
-      attack($bobby);
+            attack($bobby);
 
     else if (keyName === '0')
-      addScore();
+            addScore();
 
-  });
+    else if (keyName === 'z')
+            window.location.href = `../gameover.html?userId=${getUserId()}`;
+
+    });
+
+
+    setInterval(() => {
+        const $monsters = document.querySelectorAll('.monster:not(.getBubbled)');
+
+        if (!$monsters.length)
+            makeMonsters(getDifficulty());
+    }, 160);
 })();

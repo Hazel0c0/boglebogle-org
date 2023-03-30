@@ -24,8 +24,11 @@ export default function moveCharacter({
     //     console.log($monster2.offsetLeft);
         
     //     $monster2.style.zIndex='-100';
+    //     $monster2.classList.add('die');
     //     // $mst.style.removechild
     //   };
+
+        
 
 
     // // end kill

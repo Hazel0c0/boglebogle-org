@@ -6,22 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <audio autoplay loop>
+    <source src="bgm/BubbleBobble_GameStart.ogg" type="audio/ogg">
+  </audio>
   <link rel="stylesheet" href="CSS/selectLevel.css">
+  
 </head>
 
 <body>
   <h1 class="title btn">난이도 선택</h1>
-  <ul class="levels">
-    <a href="gameplay.html">
-      <li class="level btn">상</li>
-    </a>
-    <a href="gameplay.html">
-      <li class="level btn">중</li>
-    </a>
-    <a href="gameplay.html">
-      <li class="level btn">하</li>
-    </a>
-  </ul>
+  <form action="gameplay.html">
+    <ul class="levels">
+
+      <input type="text" id="userId" name="userId" value="" style="display: none;">
+
+      <li><input class="level btn" type="submit" href="gameplay.html" name="difficulty" value="상"></li>
+
+      <li><input class="level btn" type="submit" href="gameplay.html" name="difficulty" value="중"></li>
+
+      <li><input class="level btn" type="submit" href="gameplay.html" name="difficulty" value="하"></li>
+
+    </ul>
+  </form>
 </body>
 
 </html>
