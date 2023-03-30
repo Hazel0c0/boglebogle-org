@@ -18,6 +18,8 @@
   transform: translateX(-50%);
 }
 
+
+
 /* 오디오 */
 audio {
   display: none;
@@ -36,7 +38,26 @@ audio {
   
   border: 5px dashed wheat;
   border-radius: 100px;
+  
+}
+.btn_text:hover {
+  cursor: pointer;
+}
 
+/*  이미지 추가 버튼*/
+.m_button {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.m_button:hover{
+  cursor: pointer;
 }
 
 .levels {
@@ -46,7 +67,7 @@ audio {
 
   /* position */
   position: absolute;
-  top: 40%;
+  top: 30%;
   text-align: center;
 }
 

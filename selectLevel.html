@@ -10,15 +10,28 @@
     <source src="bgm/BubbleBobble_GameStart.ogg" type="audio/ogg">
   </audio>
   <link rel="stylesheet" href="CSS/selectLevel.css">
+  <link rel="stylesheet" href="CSS/common.css">
   
 </head>
 
 <body>
   <h1 class="title btn">난이도 선택</h1>
+  <form method="post" enctype="multipart/form-data">
+    <div class="m_button">
+        <label for="chooseFile"><span class="btn_text">
+          몬스터를 고르고 싶다면?<br><br>
+            👉 CLICK HERE! 👈
+          </span>
+        </label>
+    </div>
+    <input type="file" class="filebox_reset" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+</form>
   <form action="gameplay.html">
     <ul class="levels">
 
       <input type="text" id="userId" name="userId" value="" style="display: none;">
+
+
 
       <li><input class="level btn" type="submit" href="gameplay.html" name="difficulty" value="상"></li>
 
