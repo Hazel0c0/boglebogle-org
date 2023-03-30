@@ -22,7 +22,7 @@
 -지송
 index.html 이랑 selectLevel.html 에 노래 넣거나 selectLevel.html에만 넣기, gameover.html에 노래 넣기
 userId 입력 마무리
-gameplay.html 에서 userId gameover.html에 넘겨주기
+gameplay.html 에서 userId gameover.html에 넘겨주기 - 완료
 
 -진호
 몬스터 다 죽으면 다시 생성 - 완료
