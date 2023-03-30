@@ -3,6 +3,7 @@ import {jumpCharacter, downJumpCharacter} from "./jump.js";
 import attack from "./attack.js";
 import {getDifficulty} from "./getParameter.js";
 import makeMonsters from "./makeMonster.js";
+import addScore from "./addscore.js";
 
 // main 메서드
 (() => {
@@ -22,5 +23,9 @@ import makeMonsters from "./makeMonster.js";
             
         else if (keyName === ' ')
             attack($bobby);
+
+        else if (keyName === '0')
+            addScore();
+            
     });
 })();

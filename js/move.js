@@ -18,14 +18,14 @@ export default function moveCharacter({
 
     // $monster.classList.add('monsterMove');
 
+
     // // 몬스터 죽이기
     // if($bobby.offsetLeft>=$monster.offsetLeft){
     //     console.log('meet');
-        
     //     // $monster.style.zIndex='-100';
-  
     //     // $mst.style.removechild
     //   };
+
 
     // // end kill
 
@@ -51,4 +51,8 @@ export default function moveCharacter({
             }
             return;
     }
+
+
+
+    // 
 }
