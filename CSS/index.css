@@ -71,9 +71,7 @@ form {
   height: fit-content;
   
 }
-.input{
-    position: relative;
-}
+
 .input1{
     background-color: #ffffff;
     border: #a2c3ff solid 3px;
@@ -88,37 +86,29 @@ form {
     width: 300px;
     height: 50px;
     margin: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 5px 11px;
-    position: relative;
-    z-index: 100;
-  }
- 
- button{
-    width: 60px;
-    height: 60px; 
-    border-radius: 50%;
-    
- }
 
- /* img{
-    width: 60px;
-    height: 60px;
- } */
-/* 
-  .input1 ::placeholder{
+    display: block;
+  }
+
+  /* .input1::placeholder {
     animation: blink-effect 1s step-end infinite;
-    }
-    
-    @keyframes blink-effect {
-     50% {
+    animation:blink 1s infinite ease;
+	height:250px;width:550px;color:#000;
+  } 
+  
+  @keyframes blink-effect {
+    50% {
       opacity: 0;
-        }
-    } */
+    }
+  } */
+ 
 
 /* 스타트 버튼 */
-.start {
+.input input[type="submit"]{
     margin-left: 30px;
+    font-family: 'Ycomputer-Regular';
     font-size: 2em;
 }
 .hovered {
