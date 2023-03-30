@@ -52,18 +52,24 @@ function moveBubble($bubble, isLeft) {
   // 적 DOM
   // 지금은 하나지만 여러 적의 경우 배열로 받아서 처리할 예정
   const $monsters = [...document.querySelectorAll('.monster')];
-  const $monster = $monsters[0];
 
   if (isLeft()) {
     for (let i = 1; i <= BUBBLE_MOVE_AMOUNT; i++) {
       setTimeout(() => {
-        
+    
+        let touchFlag = false;
+
         if ($bubble.offsetLeft < 50) return;
     
-        if (touchesMonster($bubble, $monster)) {
-          $monster.classList.add('getBubbled');
-          return;
-        }
+        $monsters.forEach($monster => {
+          if (touchesMonster($bubble, $monster)) {
+            touchFlag = true;
+            $monster.classList.add('getBubbled');
+            return;
+          }
+        });
+
+        if (touchFlag) return;
 
         $bubble.style.left = `${$bubble.offsetLeft - i}px`;
 
@@ -73,12 +79,19 @@ function moveBubble($bubble, isLeft) {
     for (let i = 1; i <= BUBBLE_MOVE_AMOUNT; i++) {
       setTimeout(() => {
 
+        let touchFlag = false;
+
         if ($bubble.offsetLeft + $bubble.offsetWidth > $bubble.offsetParent.offsetWidth - 50) return;
         
-        if (touchesMonster($bubble, $monster)) {
-          $monster.classList.add('getBubbled');
-          return;
-        }
+        $monsters.forEach($monster => {
+          if (touchesMonster($bubble, $monster)) {
+            touchFlag = true;
+            $monster.classList.add('getBubbled');
+            return;
+          }
+        });
+
+        if (touchFlag) return;
 
         $bubble.style.left = `${$bubble.offsetLeft + i}px`;
 
