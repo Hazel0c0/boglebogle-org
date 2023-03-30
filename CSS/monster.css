@@ -1,15 +1,15 @@
 
 /* 몬스터 공통사항 - 사이즈 */
 .wrap .monster {
-  height: 50px;
+  /* height: 50px;
   width: 400px;
-  left: 400px;
+  left: 400px; */
 
   
   background: url(../img/icon/enemy-drunk01.png) no-repeat center / 100px 100px;
-  /* background-color: olive; */
+  /* background-color: olive;
   width: 50px;
-  height: 50px;
+  height: 50px; */
 }
 
 
@@ -39,8 +39,8 @@
 /* 차이 140px  */
 
 
-/* 몬스터 이동 모션 */
-/* .monsterMove {
+/* 몬스터 이동 모션
+.monsterMove {
   position: absolute;
   top: 0;
 

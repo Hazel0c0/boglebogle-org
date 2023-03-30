@@ -4,7 +4,10 @@ export default function attack({
   style
 }) {
   makeBubble(offsetTop, offsetLeft, style);
+  setTimeout(() => style.backgroundImage = 'url(../img/icon/bobby01.png)', 500);
 }
+
+// 가장 가까운 적을 찾는 함수
 
 // 적을 감지하는 함수
 function touchesMonster($bubble, $monster) {
@@ -18,6 +21,10 @@ function touchesMonster($bubble, $monster) {
 
 // 방울 만드는 함수들
 function makeBubble(offsetTop, offsetLeft, style) {
+
+  /* 공격 모션 */
+  style.backgroundImage = 'url(../img/icon/bobby03.png)';
+
   const $playGround = document.querySelector('.content');
 
   const $bubble = document.createElement('div');
@@ -44,18 +51,25 @@ function moveBubble($bubble, isLeft) {
 
   // 적 DOM
   // 지금은 하나지만 여러 적의 경우 배열로 받아서 처리할 예정
-  const $monster = document.querySelector('.monster');
+  const $monsters = [...document.querySelectorAll('.monster')];
 
   if (isLeft()) {
     for (let i = 1; i <= BUBBLE_MOVE_AMOUNT; i++) {
       setTimeout(() => {
-        
+    
+        let touchFlag = false;
+
         if ($bubble.offsetLeft < 50) return;
     
-        if (touchesMonster($bubble, $monster)) {
-          $monster.classList.add('getBubbled');
-          return;
-        }
+        $monsters.forEach($monster => {
+          if (touchesMonster($bubble, $monster)) {
+            touchFlag = true;
+            $monster.classList.add('getBubbled');
+            return;
+          }
+        });
+
+        if (touchFlag) return;
 
         $bubble.style.left = `${$bubble.offsetLeft - i}px`;
 
@@ -65,12 +79,19 @@ function moveBubble($bubble, isLeft) {
     for (let i = 1; i <= BUBBLE_MOVE_AMOUNT; i++) {
       setTimeout(() => {
 
+        let touchFlag = false;
+
         if ($bubble.offsetLeft + $bubble.offsetWidth > $bubble.offsetParent.offsetWidth - 50) return;
         
-        if (touchesMonster($bubble, $monster)) {
-          $monster.classList.add('getBubbled');
-          return;
-        }
+        $monsters.forEach($monster => {
+          if (touchesMonster($bubble, $monster)) {
+            touchFlag = true;
+            $monster.classList.add('getBubbled');
+            return;
+          }
+        });
+
+        if (touchFlag) return;
 
         $bubble.style.left = `${$bubble.offsetLeft + i}px`;
 
@@ -82,6 +103,9 @@ function moveBubble($bubble, isLeft) {
 
 function removeBubble($bubble) {
   setTimeout(() => {
+    $bubble.classList.add('getUp');
+  }, 600);
+  setTimeout(() => {
     $bubble.parentElement.removeChild($bubble);
-  }, 700);
+  }, 3600);
 }
