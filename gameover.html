@@ -10,14 +10,15 @@
         <source src="bgm/BubbleBobble_GameOver.ogg" type="audio/ogg">
     </audio>
     <link rel="stylesheet" href="CSS/gameover.css">
+    <script src="js/gameplay.js" type="module" defer></script>
 </head>
 <body>
     
     <div class="wrap">
         <!-- 상단 스코어 -->
         <div class="header">
-            <ul class="score">
-                <li>My Score |<span></span>.</li>
+            <ul  class="score">
+                <li>My Score |<span id = "userId"></span>.</li>
                 <li>Top Score |  9999.</li>
             </ul>
         </div>
