@@ -1,5 +1,6 @@
 import moveCharacter from "./move.js";
 import {
+
     jumpCharacter,
     downJumpCharacter
 } from "./jump.js";
@@ -10,30 +11,32 @@ import {
 } from "./getParameter.js";
 import makeMonsters from "./makeMonster.js";
 import addScore from "./addscore.js";
+import moveMonster from "./monsterMove.js";
 
 // main 메서드
 (() => {
-    makeMonsters(getDifficulty());
+  makeMonsters(getDifficulty());
 
-    const $bobby = document.getElementById('bobby');
+  moveMonster(getDifficulty());
 
-    document.addEventListener('keydown', e => {
-        const keyName = e.key;
-        if (keyName === 'ArrowRight' || keyName === 'ArrowLeft')
-            moveCharacter($bobby, keyName);
+  const $bobby = document.getElementById('bobby');
 
-        else if (keyName === 'ArrowUp')
+  document.addEventListener('keydown', e => {
+    const keyName = e.key;
+    if (keyName === 'ArrowRight' || keyName === 'ArrowLeft')
+      moveCharacter($bobby, keyName);
+    else if (keyName === 'ArrowUp')
             jumpCharacter($bobby);
-        else if (keyName === 'ArrowDown')
+    else if (keyName === 'ArrowDown')
             downJumpCharacter($bobby);
 
-        else if (keyName === ' ')
+    else if (keyName === ' ')
             attack($bobby);
 
-        else if (keyName === '0')
+    else if (keyName === '0')
             addScore();
 
-        else if (keyName === 'z')
+    else if (keyName === 'z')
             window.location.href = `../gameover.html?userId=${getUserId()}`;
 
     });
