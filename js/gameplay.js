@@ -36,7 +36,6 @@ import addScore from "./addscore.js";
 
         else if (keyName === 'z')
             window.location.href = `../gameover.html?userId=${getUserId()}`;
-
     });
 
 

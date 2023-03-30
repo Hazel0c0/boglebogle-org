@@ -18,8 +18,6 @@
   transform: translateX(-50%);
 }
 
-
-
 /* 오디오 */
 audio {
   display: none;
@@ -56,7 +54,7 @@ audio {
   transform: translateX(-50%);
 }
 
-.m_button:hover{
+.btn:hover{
   cursor: pointer;
 }
 
