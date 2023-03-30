@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <audio autoplay loop controls>
-        <source src="bgm/BubbleBobble_GameStart.ogg" type="audio/ogg">
-    </audio>
+    
 
     <!-- index.css -->
     <link rel="stylesheet" href="CSS/index.css">
@@ -24,14 +22,17 @@
                 <img src="img/icon/bubby02.png" alt="bubby 아이콘">
             </div>
             <div class="input-player">
-                <form action="gameover.html" method="get"> 
-                    <input class="input1" type="text" placeholder="★닉네임을 입력해주세요★">
-                    <input class="input2" type="button">
+                <form id="inputId" action="gameover.html" method="get"> 
+                    <div class="input">
+                        <input class="input1 blink" type="text" name = "userId" placeholder="| ★ 아이디 입력 후 START ★ ">
+                        <button>보내깅</button>
+                    </div>
+                    
                 </form>
+                <a class="start btn" href="selectLevel.html" >
+                    game start
+                </a>
             </div>
-            <a class="start btn" href="selectLevel.html">
-                game start
-            </a>
         </div>
     </div>
 </body>
