@@ -1,5 +1,4 @@
-// 기본 난이도 1
-export default function makeMonsters(difficulty = 1) {
+export default function makeMonsters(difficulty) {
 
     switch (difficulty) {
         case 3:
@@ -16,6 +15,7 @@ export default function makeMonsters(difficulty = 1) {
             }
             break;
     }
+
 }
 
 function makeSingleMonster(top, left) {

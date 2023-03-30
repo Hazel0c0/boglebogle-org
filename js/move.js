@@ -13,19 +13,19 @@ export default function moveCharacter({
 
   // 지원
 
-    // 몬스터 죽이기
-    const $bobby = document.getElementById('bobby');
-    const $monster2 = document.querySelector('.area1-2');
+    // // 몬스터 죽이기
+    // const $bobby = document.getElementById('bobby');
+    // const $monster2 = document.querySelector('.area1-2');
 
-    console.log($monster2);
+    // console.log($monster2);
 
-    if($bobby.offsetLeft>=$monster2.offsetLeft){
-        console.log($bobby.offsetLeft);
-        console.log($monster2.offsetLeft);
+    // if($bobby.offsetLeft>=$monster2.offsetLeft){
+    //     console.log($bobby.offsetLeft);
+    //     console.log($monster2.offsetLeft);
         
-        $monster2.style.zIndex='-100';
-        // $mst.style.removechild
-      };
+    //     $monster2.style.zIndex='-100';
+    //     // $mst.style.removechild
+    //   };
 
 
     // // end kill
