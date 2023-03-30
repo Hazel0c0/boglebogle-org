@@ -1,7 +1,7 @@
 
 .wrap .monster {
-  background: url(../img/icon/enemy-mighta02-.png) no-repeat center /80px 80px;
-  /* background: url(../img/soon.png) no-repeat center  /cover; */
+  /* background: url(../img/icon/enemy-mighta02-.png) no-repeat center /80px 80px; */
+  background: url(../img/soon.png) no-repeat center  /cover;
 }
 .die {
   animation:  die 1s;
