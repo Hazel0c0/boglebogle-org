@@ -17,6 +17,8 @@
 selectLevel.html 에 userId 가져오기, 난이도 버튼 input 태그로 만들어서 form으로 gameplay.html에 넘겨주기
 gameplay.html 에서 userId gameover.html에 넘겨주기
 
+index.html 이랑 selectLevel.html 에 노래 넣거나 selectLevel.html에만 넣기
+
 
 --------
 
