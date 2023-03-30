@@ -6,7 +6,8 @@
 * 채지원 - 난이도선택 페이지
 * 신지송 - 엔딩(gameover) 페이지
 
-
+- 욕심
+방울에 갇힌 몬스터한테 더이상 공격 안되도록 하기
 
 지원님이 죽이는 것, 죽는 것 끝내면
 (
@@ -27,7 +28,6 @@ userId 입력 마무리
 gameplay.html 에서 userId gameover.html에 넘겨주기
 
 -진호
-방울에 갇힌 몬스터한테 더이상 공격 안되도록 하기
 몬스터 다 죽으면 다시 생성
 selectLevel.html 에 userId 가져오기, 난이도 버튼 input 태그로 만들어서 form으로 gameplay.html에 넘겨주기
 
