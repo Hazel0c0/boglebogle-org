@@ -1,4 +1,22 @@
 (() => {
+  const $monster = document.querySelector('.area1');
+  const $monster2 = document.querySelector('.area1-2');
+
+  let moveAmount = 0;
+
+  setInterval(() => {
+      $monster.style.left = `${$monster.offsetLeft + Math.sin(moveAmount) * 50}px`;
+      
+      moveAmount++;
+  }, 900);
+
+  setInterval(() => {
+      $monster2.style.left = `${$monster2.offsetLeft - Math.sin(moveAmount) * 50}px`;
+  }, 900);
+})();
+
+/*
+(() => {
   function move() {
     console.log('+');
     const $monster = document.querySelector('.area1');

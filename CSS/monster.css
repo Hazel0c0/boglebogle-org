@@ -16,11 +16,18 @@
 .area1{
   position: absolute;
   top: 650px;
+
+
+  transform: translate(-50%, -50%);
+  transition: 1s linear;
 }
 .area1-2{
   position: absolute;
   top: 650px;
-  /* z-index: -100; */
+  left: 600px;
+ 
+  transform: translate(-50%, -50%);
+  transition: 1s linear;
 }
 
 .area2 {
