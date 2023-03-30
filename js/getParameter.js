@@ -1,6 +1,6 @@
 function getDifficulty() {
     const difficulty = new URL(window.location.href).searchParams.get('difficulty');
-    return difficulty ? difficulty : 3;
+    return difficulty ? difficulty : "중";
 }
 
 function getUserId() {
