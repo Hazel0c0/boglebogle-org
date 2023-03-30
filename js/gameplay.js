@@ -1,7 +1,12 @@
 import moveCharacter from "./move.js";
-import {jumpCharacter, downJumpCharacter} from "./jump.js";
+import {
+    jumpCharacter,
+    downJumpCharacter
+} from "./jump.js";
 import attack from "./attack.js";
-import {getDifficulty} from "./getParameter.js";
+import {
+    getDifficulty
+} from "./getParameter.js";
 import makeMonsters from "./makeMonster.js";
 import addScore from "./addscore.js";
 
@@ -20,12 +25,20 @@ import addScore from "./addscore.js";
             jumpCharacter($bobby);
         else if (keyName === 'ArrowDown')
             downJumpCharacter($bobby);
-            
+
         else if (keyName === ' ')
             attack($bobby);
 
         else if (keyName === '0')
             addScore();
-            
+
     });
+
+
+    setInterval(() => {
+        const $monsters = document.querySelectorAll('.monster:not(.getBubbled)');
+
+        if (!$monsters.length)
+            makeMonsters(getDifficulty());
+    }, 160);
 })();
