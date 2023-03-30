@@ -11,17 +11,19 @@
 
 <body>
   <h1 class="title btn">난이도 선택</h1>
-  <ul class="levels">
-    <a href="gameplay.html">
-      <li class="level btn">상</li>
-    </a>
-    <a href="gameplay.html">
-      <li class="level btn">중</li>
-    </a>
-    <a href="gameplay.html">
-      <li class="level btn">하</li>
-    </a>
-  </ul>
+  <form action="gameplay.html">
+    <ul class="levels">
+
+      <input type="text" id="userId" name="userId" value="" style="display: none;">
+
+      <li><input class="level btn" type="submit" href="gameplay.html" name="difficulty" value="상"></li>
+
+      <li><input class="level btn" type="submit" href="gameplay.html" name="difficulty" value="중"></li>
+
+      <li><input class="level btn" type="submit" href="gameplay.html" name="difficulty" value="하"></li>
+
+    </ul>
+  </form>
 </body>
 
 </html>

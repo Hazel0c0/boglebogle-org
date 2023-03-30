@@ -5,7 +5,8 @@ import {
 } from "./jump.js";
 import attack from "./attack.js";
 import {
-    getDifficulty
+    getDifficulty, 
+    getUserId
 } from "./getParameter.js";
 import makeMonsters from "./makeMonster.js";
 import addScore from "./addscore.js";
@@ -31,6 +32,9 @@ import addScore from "./addscore.js";
 
         else if (keyName === '0')
             addScore();
+
+        else if (keyName === 'z')
+            window.location.href = `../gameover.html?userId=${getUserId()}`;
 
     });
 

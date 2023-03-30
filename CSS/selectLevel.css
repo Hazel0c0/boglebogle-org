@@ -56,3 +56,10 @@
   display: block;
   margin: 20px auto;
 }
+
+.level {
+  width: 100%;
+  font-size: 0.8em;
+
+  font-family: 'Ycomputer-Regular';
+}

@@ -29,7 +29,7 @@ gameplay.html 에서 userId gameover.html에 넘겨주기
 
 -진호
 몬스터 다 죽으면 다시 생성 - 완료
-selectLevel.html 에서 userId 넘겨주기, 난이도 버튼 input 태그로 만들어서 form으로 gameplay.html에 넘겨주기
+selectLevel.html 에서 userId 넘겨주기, 난이도 버튼 input 태그로 만들어서 form으로 gameplay.html에 넘겨주기 - 완료
 
 [ 3day ]
 몬스터 죽는 함수[kill] / 캐릭터 죽는 함수 나누기(if)[die]
