@@ -10,10 +10,10 @@
     <source src="bgm/BubbleBobble_MainTheme.ogg" type="audio/ogg">
   </audio>
   <link rel="stylesheet" href="CSS/gameplay.css">
-  <!-- <link rel="stylesheet" href="CSS/monster.css"> -->
+  <link rel="stylesheet" href="CSS/monster.css">
 
   <script src="js/gameplay.js" type="module" defer></script>
-  <!-- <script src="js/kill.js" type="module" defer></script> -->
+  <!-- <script src="js/monsterMove.js" type="module" defer></script> -->
 </head>
 
 <body>
@@ -29,38 +29,49 @@
             </div>
 
 
-             <!-- 콘텐츠 메인 -->
-            <div class="content">
 
-                <!-- 왼/오 벽 -->
-                <ul class="sidewall">
-                    <li></li>
-                    <li></li>
-                </ul>    
+      <!-- 콘텐츠 메인 -->
+      <div class="content">
+
+        <!-- 왼/오 벽 -->
+        <ul class="sidewall">
+          <li></li>
+          <li></li>
+        </ul>
 
 
-                <!-- 벽돌 바닥 -->
-                <div class="gameroad">
-                    <ul class="floor fir-floor">
-                        <li ></li>
-                    </ul>
+        <!-- 벽돌 바닥 -->
+        <div class="gameroad">
+          <ul class="floor fir-floor">
+            <li></li>
+          </ul>
 
-                    <ul id="onthefloor" class="floor sec-floor" >
-                        <li></li>
-                    </ul>
-                    <ul id="onthefloor" class="floor thir-floor">
-                        <li></li>
-                    </ul>
-                    <ul id="onthefloor" class="floor four-floor">
-                        <li></li>
-                    </ul>   
-                    <ul class="floor top-floor">
-                        <li ></li>
-                    </ul>
-                </div>  
+          <ul id="onthefloor" class="floor sec-floor">
+            <li></li>
+          </ul>
+          <ul id="onthefloor" class="floor thir-floor">
+            <li></li>
+          </ul>
+          <ul id="onthefloor" class="floor four-floor">
+            <li></li>
+          </ul>
+          <ul class="floor top-floor">
+            <li></li>
+          </ul>
+        </div>
 
         <!-- 플레이어 -->
         <div id="bobby"></div>
+
+        <!-- 몬스터 -->
+        <div class="monsters">
+
+          <div class="monster area1"></div>
+          <div class="monster area1-2"></div>
+          <div class="monster area2"></div>
+          <div class="monster area3"></div>
+          <div class="monster area4"></div>
+        </div>
 
 </body>
 
