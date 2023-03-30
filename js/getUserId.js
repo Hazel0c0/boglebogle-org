@@ -1,18 +1,7 @@
-export default function makeMonsters(difficulty = 1) {
+import {getUserId}  from "./getParameter.js";
 
-    switch (difficulty) {
-        case 3:
-            for (let i = 0; i < 4; i++) {
-                makeSingleMonster(650 - 140 * i, 800);
-            }
-        case 2:
-            for (let i = 0; i < 4; i++) {
-                makeSingleMonster(650 - 140 * i, 600);
-            }
-        case 1:
-            for (let i = 0; i < 4; i++) {
-                makeSingleMonster(650 - 140 * i, 400);
-            }
-            break;
-    }
-}
+const getId = getUserId();
+// console.log(getId);
+
+const addId = document.getElementById('userId');
+addId.textContent = getId;

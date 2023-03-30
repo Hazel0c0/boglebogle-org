@@ -1,17 +1,20 @@
 
 .wrap .monster {
-  background: url(../img/icon/enemy-drunk01.png) no-repeat center / 100px 100px;
+  /* background: url(../img/icon/enemy-mighta02-.png) no-repeat center /80px 80px; */
+  background: url(../img/soon.png) no-repeat center  /cover;
 }
 .die {
   animation:  die 1s;
 }
 
 @keyframes die {
-20% { 
+10% { 
   transform: scale(2.5);
-  transform: rotate( 180deg );;
+  top:620px ;
 }
 50%{
+  transform: scale(2.5);
+  transform: rotate( 180deg );
 }
 90% {   
 top:800px;
@@ -26,6 +29,7 @@ transform: scale(0);
 
 .area1{
   /* 가장빠름 */
+
   transform: rotate( 180deg );;
   position: absolute;
   top: 670px;

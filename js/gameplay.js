@@ -38,7 +38,6 @@ import moveMonster from "./monsterMove.js";
 
     else if (keyName === 'z')
             window.location.href = `../gameover.html?userId=${getUserId()}`;
-
     });
 
 
