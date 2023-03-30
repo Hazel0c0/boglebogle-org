@@ -14,6 +14,8 @@ export default function moveCharacter({
   // kill
 
   // y축 값 넣기
+  //사라지게하기 
+  // 높이 줄이기
     const $monsters = [...document.querySelectorAll('.monster')];
     const $bobby = document.getElementById('bobby');
 
