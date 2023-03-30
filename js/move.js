@@ -10,26 +10,24 @@ export default function moveCharacter({
     // 움직이는 정도
     const MOVE_AMOUNT = 25;
     
-    // 몬스터 죽이기
-    const $bobby = document.getElementById('bobby');
-    const $monster = document.querySelector('.monsters');
+    // // 몬스터 죽이기
+    // const $bobby = document.getElementById('bobby');
+    // const $monster = document.querySelector('.monsters');
 
-    console.log($monster);
+    // console.log($monster);
 
-    $monster.classList.add('monsterMove');
-
-    // 몬스터 죽이기
-    if($bobby.offsetLeft>=$monster.offsetLeft){
-        console.log('meet');
-        // addScore();
-        // $monster.style.zIndex='-100';
-  
-        // $mst.style.removechild
-      };
+    // $monster.classList.add('monsterMove');
 
 
+    // // 몬스터 죽이기
+    // if($bobby.offsetLeft>=$monster.offsetLeft){
+    //     console.log('meet');
+    //     // $monster.style.zIndex='-100';
+    //     // $mst.style.removechild
+    //   };
 
-    // end kill
+
+    // // end kill
 
     switch (direction) {
         case 'ArrowRight':
