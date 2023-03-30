@@ -11,6 +11,12 @@
 라이프3개
 몬스터 뒤집기(트렌지션 : 프로퍼티(속성값))
 
+방울에 갇힌 몬스터한테 더이상 공격 안되도록 하기
+지원님이 움직이는 것 끝내면 합치기
+
+selectLevel.html 에 userId 가져오기, 난이도 버튼 input 태그로 만들어서 form으로 gameplay.html에 넘겨주기
+gameplay.html 에서 userId gameover.html에 넘겨주기
+
 
 --------
 
