@@ -82,6 +82,8 @@ audio {
     position: absolute;
     bottom: 0;
     left: 600px;
+
+    transition: 1s linear;
 }
 
 /* 몬스터 물방울 갇혔을 때 */
