@@ -22,8 +22,8 @@ export default function moveCharacter({
     if($bobby.offsetLeft>=$monster2.offsetLeft){
         console.log($bobby.offsetLeft);
         console.log($monster2.offsetLeft);
-        
-        $monster2.style.zIndex='-100';
+
+        $monster2.classList.add('die');
         // $mst.style.removechild
       };
 

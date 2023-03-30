@@ -2,24 +2,40 @@
 .wrap .monster {
   background: url(../img/icon/enemy-drunk01.png) no-repeat center / 100px 100px;
 }
+.die {
+  animation:  die 1s;
+}
 
-@keyframes m_die {
-  0% { 속성: 값; }
-  50% { 속성: 값; }
-  100% {속성: 값; }
+@keyframes die {
+20% { 
+  transform: scale(2.5);
+  transform: rotate( 180deg );;
+}
+50%{
+}
+90% {   
+top:800px;
+transform: scale(0.1);
+  }
+  100%{
+   top:800px;
+transform: scale(0);
+  }
 }
 
 
 .area1{
   /* 가장빠름 */
+  transform: rotate( 180deg );;
   position: absolute;
   top: 670px;
-
 
   transform: translate(-50%, -50%);
   transition: 0.5s linear;
 }
 .area1-2{
+  left: 50%;
+
   position: absolute;
   top: 670px;
  
