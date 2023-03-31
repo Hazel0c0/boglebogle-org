@@ -17,30 +17,11 @@
 
   <!-- js -->
   <script src="../js/selectLevel.js" type="module" defer></script>
-  <script src="../js/file.js" type="module" defer></script>
-
 
 </head>
 
 <body>
   <h1 class="title btn"><span id="userIdShow"></span><span>님의 난이도 선택</span></h1>
-
-
-  <!-- 몬스터 이미지 -->
-  <form method="post">
-    <!-- enctype="multipart/form-data" -->
-    <div class="m_button">
-      <label for="chooseFile">
-        <span class="btn_text">
-          몬스터를 고르고 싶다면?<br><br>
-          👉 CLICK HERE! 👈
-        </span>
-      </label>
-    </div>
-    <input type="file" class="filebox_reset" id="chooseFile" name="chooseFile" accept="image/*">
-    <!-- <div class="btn here">눌럿</div> -->
-    <!-- onchange="loadFile(this)" -->
-  </form>
 
   <form action="gameplay.html">
     <ul class="levels">
@@ -52,21 +33,6 @@
       <li><input class="level btn" type="submit" href="gameplay.html" name="difficulty" value="하"></li>
 
     </ul>
-  </form>
-  <form method="post">
-    <!-- enctype="multipart/form-data" -->
-    <div class="m_button">
-      <label for="chooseFile">
-        <div class="btn_text">
-          몬스터를 고르고 싶다면?<br><br>
-          👉 CLICK HERE! 👈
-        </div>
-      </label>
-    </div>
-    <input type="file" class="filebox_reset" id="chooseFile" name="chooseFile" accept="image/*">
-    <div class="btn here">눌럿</div>
-    <!-- onchange="loadFile(this)" -->
-
   </form>
 
 </body>

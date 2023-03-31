@@ -17,9 +17,14 @@ import moveMonster from "./monsterMove.js";
     let difficulty;
 
     switch (getDifficulty()) {
-        case "상": difficulty = 3; break;
-        case "하": difficulty = 1; break;
-        default: difficulty = 2;
+        case "상":
+            difficulty = 3;
+            break;
+        case "하":
+            difficulty = 1;
+            break;
+        default:
+            difficulty = 2;
     }
 
     makeMonsters(difficulty);
