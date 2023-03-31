@@ -76,7 +76,7 @@ audio {
   }
 /* 몬스터 */
 .monster {
-    background: url(../img/soon.png) no-repeat center / 100px 100px;
+    background: url(../img/soon.png) no-repeat center / cover;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -90,13 +90,11 @@ audio {
 /* 우선순위 높히려 자세하게 씀 */
 .wrap .content .monster.getBubbled { 
 
-    /* background-image: url(../img/icon/enemy-drunk04.png); */
-    background: url(../img/soon.png) no-repeat center  /cover;
+    background-image: url(../img/soon.png);
     transition: 1s;
 
     width: 60px;
     height: 60px;
-    /* background-size: 120px 120px; */
 
     transform: translateY(-20px);
 }
@@ -121,4 +119,15 @@ audio {
   100% {
     transform: scale(0) translateY(-150px);
   }
+}
+
+.inBubble {
+  position: absolute;
+  background: url(../img/icon/bubble.jpg) no-repeat center / cover;
+  opacity: 0.5;
+  border-radius: 50%;
+  width: 130%;
+  height: 130%;
+  left: -7px;
+  top: -9px;
 }

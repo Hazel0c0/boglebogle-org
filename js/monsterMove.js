@@ -1,3 +1,5 @@
+import isMeetMonster from "./meetMonster.js";
+
 export default function moveMonster(difficulty) {
   // 모든 몬스터 담은 배열
 
@@ -9,17 +11,25 @@ export default function moveMonster(difficulty) {
     $monsters.forEach($monster => {
       const moveRange = Math.floor(Math.random() * 31 + 20);
 
-      let moveAmount = $monster.offsetLeft + Math.sin(moveTime) * moveRange * difficulty;
-      if ($monster.offsetLeft + $monster.offsetWidth + moveAmount > $monster.parentElement.offsetWidth - 50) {
-        $monster.style.left = `${$monster.parentElement.offsetWidth -50}px`;
+      const indexOfMonster = $monsters.indexOf($monster);
+
+      const triFunction = indexOfMonster % 2 == 0 ? Math.sin(moveTime) : Math.cos(moveTime);
+
+      let moveAmount = $monster.offsetLeft + triFunction * moveRange * difficulty;
+
+      if (moveAmount > $monster.parentElement.offsetWidth - 50) {
+        $monster.style.left = `${$monster.parentElement.offsetWidth - 100}px`;
         return;
       }
-      
-      if ($monster.offsetLeft - moveAmount < 50) {
 
+      if (moveAmount < 50) {
+        $monster.style.left = `50px`;
+        return;
       }
 
       $monster.style.left = `${moveAmount}px`;
+      
+      isMeetMonster();
     });
     moveTime++;
   }, 1000);

@@ -7,12 +7,9 @@ import {
 import attack from "./attack.js";
 import {
     getDifficulty,
-    getUserId
 } from "./getParameter.js";
 import makeMonsters from "./makeMonster.js";
-import addScore from "./addscore.js";
 import moveMonster from "./monsterMove.js";
-import meetMonster from "./meetMonster.js";
 
 // main 메서드
 (() => {
@@ -45,17 +42,11 @@ import meetMonster from "./meetMonster.js";
 
         else if (keyName === ' ')
             attack($bobby);
-
-        else if (keyName === '0')
-            addScore();
-
-        else if (keyName === 'z')
-            window.location.href = `../html/gameover.html?userId=${getUserId()}&score=${document.getElementById('score').textContent}`;
     });
 
 
     setInterval(() => {
-        const $monsters = document.querySelectorAll('.monster:not(.getBubbled)');
+        const $monsters = document.querySelectorAll('.monster');
 
         if (!$monsters.length)
             makeMonsters(difficulty);
