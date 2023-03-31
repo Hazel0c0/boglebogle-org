@@ -17,7 +17,7 @@
     점수 올리는 것 합치기
 )
 
-[ 4day ]
+### 4day
 
 -지송
 index.html 이랑 selectLevel.html 에 노래 넣거나 selectLevel.html에만 넣기, gameover.html에 노래 넣기
