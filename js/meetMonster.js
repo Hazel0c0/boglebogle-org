@@ -6,11 +6,11 @@ import {
 function meetMonster($monster) {
 
   if ($monster.classList.contains('getBubbled')) {
-    addScore();
     $monster.classList.add('die');
     setTimeout(() => {
       $monster.parentElement.removeChild($monster);
-    }, 1000);
+    }, 100);
+    addScore();
   } else {
     window.location.href = `../html/gameover.html?userId=${getUserId()}&score=${document.getElementById('score').textContent}`;
   }
@@ -33,7 +33,7 @@ export default function isMeetMonster() {
     .filter($monster => $monster.offsetTop === offsetTop)
     .forEach($monster => {
       // console.log($monster);
-      if (($monster.offsetLeft < offsetLeft + offsetWidth && $monster.offsetLeft > offsetLeft) ||
+      if ((offsetLeft ) ||
         $monster.offsetLeft + $monster.offsetwidth > offsetLeft && $monster.offsetLeft + $monster.offsetWidth < offsetLeft + offsetWidth) {
         meetMonster($monster);
       }
