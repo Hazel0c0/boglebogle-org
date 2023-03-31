@@ -12,6 +12,7 @@ import {
 import makeMonsters from "./makeMonster.js";
 import addScore from "./addscore.js";
 import moveMonster from "./monsterMove.js";
+import meetMonster from "./meetMonster.js";
 
 // main 메서드
 (() => {
@@ -49,7 +50,7 @@ import moveMonster from "./monsterMove.js";
             addScore();
 
         else if (keyName === 'z')
-            window.location.href = `../gameover.html?userId=${getUserId()}&score=${document.getElementById('score').textContent}`;
+            window.location.href = `../html/gameover.html?userId=${getUserId()}&score=${document.getElementById('score').textContent}`;
     });
 
 
@@ -57,6 +58,6 @@ import moveMonster from "./monsterMove.js";
         const $monsters = document.querySelectorAll('.monster:not(.getBubbled)');
 
         if (!$monsters.length)
-            makeMonsters(getDifficulty());
+            makeMonsters(difficulty);
     }, 160);
 })();

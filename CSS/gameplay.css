@@ -76,7 +76,7 @@ audio {
   }
 /* 몬스터 */
 .monster {
-    background: url(../img/icon/enemy-drunk01.png) no-repeat center / 100px 100px;
+    background: url(../img/soon.png) no-repeat center / 100px 100px;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -99,6 +99,26 @@ audio {
     /* background-size: 120px 120px; */
 
     transform: translateY(-20px);
+}
 
-    /* border-radius: 50%; */
+.die {
+  animation: die 1s forwards;
+}
+
+@keyframes die {
+  10% {
+    transform: scale(2.5) translateY(-30px);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(2.5) translateY(-30px);
+  }
+
+  90% {
+    transform: scale(0.1) translateY(-150px);
+  }
+
+  100% {
+    transform: scale(0) translateY(-150px);
+  }
 }

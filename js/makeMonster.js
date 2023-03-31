@@ -29,12 +29,5 @@ function makeSingleMonster(top, left) {
     $monster.style.top = `${top}px`;
 
     $playGround.appendChild($monster);
-
-
+    
 }
-
-
-// 몬스터 사진 추가
-
-// let imageFile;
-// imageFile = event.target.files[0];

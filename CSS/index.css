@@ -2,117 +2,102 @@
 
 /* 버튼 공통사항 */
 .btn {
-    font-weight: 700;
-    color: white;
-    text-shadow: 1px 1px 5px #000;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 5px #000;
 
-    padding: 20px 40px;
-    /* background-color: rgba(100, 98, 93, 0.16); */
-    background-color: rgba(35, 35, 35, 0.514);
+  padding: 20px 40px;
+  background-color: rgba(35, 35, 35, 0.514);
 
-    border: 5px dashed wheat;
-    border-radius: 100px;
+  border: 5px dashed wheat;
+  border-radius: 100px;
 }
 
 /* .main-menu style */
 .main-menu {
-    width: 60%;
-    height: 100vh;
-    margin: 0 auto;
+  width: 60%;
+  height: 100vh;
+  margin: 0 auto;
 
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /* 제목 */
 .main-menu .title {
-    width: fit-content;
-    height: 150px;
+  width: fit-content;
+  height: 150px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 .main-menu .title h1 {
-    padding-left: 100px;
-    padding-right: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 
-    word-spacing: 30px;
-    text-align: center;
+  word-spacing: 30px;
+  text-align: center;
 }
 
 /* 왼쪽 보글이 이미지 */
 .main-menu .title img:first-child {
-    width: 100px;
-    align-self: start;
+  width: 100px;
+  align-self: start;
 
-    /* 좌우반전 */
-    transform: scaleX(-1);
+  /* 좌우반전 */
+  transform: scaleX(-1);
 }
 
 /* 오른쪽 보글이 이미지 */
 .main-menu .title img:last-child {
-    width: 100px;
-    align-self: flex-end;
+  width: 100px;
+  align-self: flex-end;
 }
 
 
 /* 닉네임 입력 */
 
 form {
-  /* border: 1px solid #000; */
   align-content: space-around;
   padding-left: 30px;
   height: fit-content;
-  
+
 }
 
-.input1{
-    background-color: #ffffff;
-    border: #a2c3ff solid 3px;
-    border-radius: 20px;
-    color: #000000;
-   
-    /* text-align: center; */
-    font-size: 20px;
-    font-family: 'Ycomputer-Regular';
-    font-weight: 700;
+.input1 {
+  background-color: #ffffff;
+  border: #a2c3ff solid 3px;
+  border-radius: 20px;
+  color: #000000;
 
-    width: 300px;
-    height: 50px;
-    margin: 20px;
-    margin-bottom: 20px;
-    padding: 5px 11px;
+  font-size: 20px;
+  font-family: 'Ycomputer-Regular';
+  font-weight: 700;
 
-    display: block;
-  }
+  width: 300px;
+  height: 50px;
+  margin: 20px;
+  margin-bottom: 20px;
+  padding: 5px 11px;
 
-  /* .input1::placeholder {
-    animation: blink-effect 1s step-end infinite;
-    animation:blink 1s infinite ease;
-	height:250px;width:550px;color:#000;
-  } 
-  
-  @keyframes blink-effect {
-    50% {
-      opacity: 0;
-    }
-  } */
- 
+  display: block;
+}
 
 /* 스타트 버튼 */
-.input input[type="submit"]{
-    margin-left: 30px;
-    font-family: 'Ycomputer-Regular';
-    font-size: 2em;
+.input input[type="submit"] {
+  margin-left: 30px;
+  font-family: 'Ycomputer-Regular';
+  font-size: 2em;
 }
+
 .hovered {
-    transform: scale(1.1);
-    background-color: rgba(35, 35, 35, 0.8);
-    border: 5px dashed aqua;
+  transform: scale(1.1);
+  background-color: rgba(35, 35, 35, 0.8);
+  border: 5px dashed aqua;
 }
