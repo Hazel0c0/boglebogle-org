@@ -6,11 +6,12 @@ import {
 function meetMonster($monster) {
 
   if ($monster.classList.contains('getBubbled')) {
-    addScore();
     $monster.classList.add('die');
     setTimeout(() => {
       $monster.parentElement.removeChild($monster);
     }, 100);
+    addScore();
+
   } else {
     window.location.href = `../html/gameover.html?userId=${getUserId()}&score=${document.getElementById('score').textContent}`;
   }

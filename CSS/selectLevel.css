@@ -1,5 +1,4 @@
 @import url('common.css');
-
 .title {
   /* font */
   font-size: 3em;
@@ -51,6 +50,7 @@ audio {
   font-weight: 700;
 
   position: absolute;
+
   top: 70%;
   left: 50%;
   transform: translateX(-50%);
