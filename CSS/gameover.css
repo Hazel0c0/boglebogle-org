@@ -55,7 +55,7 @@ audio {
     height: 100vh;
 
     position: absolute;
-    top: 35%;
+    top: 18%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -93,6 +93,33 @@ h1::before {
     }
   }
 
+  .main div {
+    width: 80%;
+    height: 200px;
+    
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 600;
+    line-height: 1.5;
+
+    border: 2px solid #dde486;
+    box-shadow: 1px 1px 4px rgb(170, 228, 255);
+    background: rgb(0, 18, 44);
+    color: rgb(255, 255, 255);
+    
+    padding-top: 30px;
+    margin: 150px auto 0;
+    opacity: 70%;
+  }
+
+  #gameOverId{
+    font-size: 1.2em;
+    color: rgb(238, 255, 0);
+  }
+  #gameOverScore{
+    font-size: 1.2em;
+    color: rgb(255, 0, 0);
+  }
 /* 하단 메뉴 */
 .footer{
     display: flex;

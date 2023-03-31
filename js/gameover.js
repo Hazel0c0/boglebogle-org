@@ -6,4 +6,7 @@ import { getScore, getUserId } from "./getParameter.js";
     document.getElementById('restart').onclick = e => {
         window.location.href = `../html/selectLevel.html?userId=${getUserId()}`;
     };
+    
+    document.querySelector('#gameOverId').textContent = getUserId();
+    document.querySelector('#gameOverScore').textContent = getScore();
 })();
