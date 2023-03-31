@@ -1,7 +1,10 @@
 import { getUserId } from "./getParameter.js";
 
 (() => {
-    document.getElementById('userId').value = getUserId();
+    const userId = getUserId();
+
+    document.getElementById('userIdShow').textContent = userId;
+    document.getElementById('userId').value = userId;
 })();
 
 // console.log(getUserId());

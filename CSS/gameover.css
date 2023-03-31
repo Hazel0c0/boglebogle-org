@@ -128,4 +128,13 @@ h1::before {
     height: 80px;
 }
 
+/* 재시작 버튼 */
+#restart {
+  width: 100%;
+  font-size: 1em;
 
+  font-family: 'Ycomputer-Regular';
+}
+#restart:hover {
+  cursor: pointer;
+}

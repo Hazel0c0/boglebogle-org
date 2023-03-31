@@ -37,7 +37,7 @@ import moveMonster from "./monsterMove.js";
             addScore();
 
     else if (keyName === 'z')
-            window.location.href = `../gameover.html?userId=${getUserId()}`;
+            window.location.href = `../gameover.html?userId=${getUserId()}&score=${document.getElementById('score').textContent}`;
     });
 
 
