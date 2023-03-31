@@ -7,7 +7,6 @@ export default function moveCharacter({
   // 벽 두께
   const WALL_WIDTH = document.querySelector('.sidewall li').clientWidth;
 
-
   // 움직이는 정도
   const MOVE_AMOUNT = 25;
 
@@ -22,13 +21,12 @@ export default function moveCharacter({
     };
   }
 
-
   switch (direction) {
     case 'ArrowRight':
       style.transform = 'scaleX(-1)';
       for (let i = 1; i <= MOVE_AMOUNT; i++) {
         setTimeout(() => {
-          if (offsetLeft + offsetWidth + i > -WALL_WIDTH + offsetParent.offsetWidth)
+          if (offsetLeft + offsetWidth + i > - WALL_WIDTH + offsetParent.offsetWidth)
             return;
           style.left = (offsetLeft + i) + 'px';
         }, 1);

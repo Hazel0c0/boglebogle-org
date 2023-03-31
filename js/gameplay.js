@@ -12,6 +12,7 @@ import {
 import makeMonsters from "./makeMonster.js";
 import addScore from "./addscore.js";
 import moveMonster from "./monsterMove.js";
+import meetMonster from "./meetMonster.js";
 
 // main 메서드
 (() => {
