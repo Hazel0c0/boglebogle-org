@@ -32,9 +32,3 @@ function makeSingleMonster(top, left) {
 
 
 }
-
-
-// 몬스터 사진 추가
-
-// let imageFile;
-// imageFile = event.target.files[0];

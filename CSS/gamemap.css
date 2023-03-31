@@ -14,7 +14,6 @@
 
 /* 상단 스코어 */
 .header .score{
-    /* background: pink; */
     width: 680px;
     height: 50px;
     margin: 0 auto;
@@ -27,7 +26,6 @@
     
 }
 .header .score li{
-    /* border: 1px solid #ffffff; */
     width: 290px;
     padding: 10px 100px 10px 0;
 
@@ -48,7 +46,6 @@
 /* 콘텐츠 메인 */
 
 .sidewall {
-    /* border: 1px solid #f1e8e8; */
     width: 100%;
     height: 650px;
     list-style: none;
@@ -61,7 +58,6 @@
 
 .sidewall li{
     width: 50px;
-    /* border: 1px solid #f79941; */
 
     background: url("../img/icon/wall.png") center/50px;
     z-index: 999;
@@ -88,22 +84,15 @@
     display: inline-flex;
     justify-content: space-between;
     
-    /* border: 1px solid #f8f8f8; */
 }
 
 #onthefloor li {
-    /* width: 300px; */
     width: 100%;
     height: 45px;
     background: url("../img/icon/wall.png") center/50px;
     
     border: 1px solid #000;
 }
-
-/*   빈 공간(만드려면 onthefloor li*2 씩 추가하기)
-    #onthefloor li:nth-child(2) {
-    width : 600px;
-} */
 
 .sec-floor {
     position: absolute;

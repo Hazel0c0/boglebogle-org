@@ -6,5 +6,3 @@ import { getUserId } from "./getParameter.js";
     document.getElementById('userIdShow').textContent = userId;
     document.getElementById('userId').value = userId;
 })();
-
-// console.log(getUserId());

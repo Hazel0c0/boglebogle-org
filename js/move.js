@@ -11,33 +11,16 @@ export default function moveCharacter({
   // 움직이는 정도
   const MOVE_AMOUNT = 25;
 
-  // kill
+  const $monsters = [...document.querySelectorAll('.monster')];
+  const $bobby = document.getElementById('bobby');
 
-  // y축 값 넣기
-  //사라지게하기 
-  // 높이 줄이기
-    const $monsters = [...document.querySelectorAll('.monster')];
-    const $bobby = document.getElementById('bobby');
+  for (let i = 0; i < $monsters.length; i++) {
 
-       console.log($monsters[0]);
-    
-    for (let i = 0; i < $monsters.length; i++) {
-       console.log("보비 위치 "+$bobby.offsetLeft);
-       if($bobby.offsetLeft>=$monsters[i].offsetLeft ){
-            console.log("몬 위치" + $monsters[i].offsetLeft);
-            console.log("몬" + $monsters[i]);
-            $monsters[i].classList.add('die');
-        };
-      }
+    if ($bobby.offsetLeft >= $monsters[i].offsetLeft) {
 
-
-    //   if($bobby.offsetLeft>=$monsters[0].offsetLeft){
-    //     console.log("몬 위치" + $monsters[0].offsetLeft);
-    //     console.log("몬" + $monsters[0]);
-    //     $monsters[0].classList.add('die');
-    // };
-  // end kill
-
+      $monsters[i].classList.add('die');
+    };
+  }
 
 
   switch (direction) {

@@ -6,12 +6,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  
+  <!-- audio -->
   <audio autoplay loop>
     <source src="bgm/BubbleBobble_GameStart.ogg" type="audio/ogg">
   </audio>
-  <link rel="stylesheet" href="CSS/selectLevel.css">
-  <link rel="stylesheet" href="CSS/common.css">
-  <script src="js/selectLevel.js" type="module" defer></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="../CSS/selectLevel.css">
+
+  <!-- js -->
+  <script src="../js/selectLevel.js" type="module" defer></script>
 
 </head>
 
@@ -21,14 +26,14 @@
   <!-- 몬스터 이미지 -->
   <form method="post">
     <!-- enctype="multipart/form-data" -->
-    <div class="m_button">
+    <!-- <div class="m_button">
       <label for="chooseFile">
         <span class="btn_text">
           몬스터를 고르고 싶다면?<br><br>
           👉 CLICK HERE! 👈
         </span>
       </label>
-    </div>
+    </div> -->
     <input type="file" class="filebox_reset" id="chooseFile" name="chooseFile" accept="image/*">
     <!-- <div class="btn here">눌럿</div> -->
     <!-- onchange="loadFile(this)" -->
