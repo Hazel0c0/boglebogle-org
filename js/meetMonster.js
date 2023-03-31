@@ -3,15 +3,6 @@ import {
   getUserId
 } from "./getParameter.js";
 
-export default check;
-
-function check() {
-  const touchMonster = isMeetMonster();
-  if (touchMonster) {
-    meetMonster(touchMonster);
-  }
-}
-
 function meetMonster($monster) {
 
   if ($monster.classList.contains('getBubbled')) {
@@ -25,18 +16,14 @@ function meetMonster($monster) {
   }
 }
 
-function isMeetMonster() {
+export default function isMeetMonster() {
   const $bobby = document.getElementById('bobby');
   const $monsters = [...document.querySelectorAll('.monster')];
   const {
     offsetLeft,
     offsetTop,
     offsetWidth
-  } = {
-    $bobby
-  };
-
-  let touchMonster = null;
+  } = $bobby;
 
   // 캐릭터와 몬스터가 만나는 것 감지 순서대로 
   // 기준은 캐릭터와 층이 같은 몬스터
@@ -44,11 +31,11 @@ function isMeetMonster() {
   //    오른쪽에서 왼쪽
   $monsters
     .filter($monster => $monster.offsetTop === offsetTop)
-    .forEach(($monster) => {
-      if ($monster.monOffsetLeft > offsetLeft + offsetWidth &&
-        $monster.monOffsetLeft + $monster.monOffsetwidth < offsetLeft)
-        touchMonster = $monster;
+    .forEach($monster => {
+      // console.log($monster);
+      if (($monster.offsetLeft < offsetLeft + offsetWidth && $monster.offsetLeft > offsetLeft) ||
+        $monster.offsetLeft + $monster.offsetwidth > offsetLeft && $monster.offsetLeft + $monster.offsetWidth < offsetLeft + offsetWidth) {
+        meetMonster($monster);
+      }
     });
-
-  return touchMonster;
 }

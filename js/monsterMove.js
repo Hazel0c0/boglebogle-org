@@ -1,4 +1,4 @@
-import check from "./meetMonster.js";
+import isMeetMonster from "./meetMonster.js";
 
 export default function moveMonster(difficulty) {
   // 모든 몬스터 담은 배열
@@ -29,7 +29,7 @@ export default function moveMonster(difficulty) {
 
       $monster.style.left = `${moveAmount}px`;
       
-      check();
+      isMeetMonster();
     });
     moveTime++;
   }, 1000);

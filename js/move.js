@@ -1,4 +1,4 @@
-import check from "./meetMonster.js";
+import isMeetMonster from "./meetMonster.js";
 
 export default function moveCharacter({
   style,
@@ -12,7 +12,7 @@ export default function moveCharacter({
   // 움직이는 정도
   const MOVE_AMOUNT = 25;
 
-  check();
+  isMeetMonster();
 
   switch (direction) {
     case 'ArrowRight':
