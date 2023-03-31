@@ -9,7 +9,7 @@ fileInput.addEventListener('change', function (e) {
   const reader = new FileReader();
   reader.readAsDataURL(file); //파일을 읽는 메서드
 
-  makeMonsters(reader);
+  newMon(reader.result);
 
   // 받은 파일은 변수에 담아주고 난이도 선택후 넘겨주기
 
