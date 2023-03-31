@@ -10,7 +10,7 @@ function meetMonster($monster) {
     $monster.classList.add('die');
     setTimeout(() => {
       $monster.parentElement.removeChild($monster);
-    }, 1000);
+    }, 100);
   } else {
     window.location.href = `../html/gameover.html?userId=${getUserId()}&score=${document.getElementById('score').textContent}`;
   }
