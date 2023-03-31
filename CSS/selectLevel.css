@@ -50,7 +50,8 @@ audio {
   font-weight: 700;
 
   position: absolute;
-  top: 65%;
+
+  top: 70%;
   left: 50%;
   transform: translateX(-50%);
 }

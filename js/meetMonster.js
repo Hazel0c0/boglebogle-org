@@ -11,6 +11,7 @@ function meetMonster($monster) {
       $monster.parentElement.removeChild($monster);
     }, 100);
     addScore();
+
   } else {
     window.location.href = `../html/gameover.html?userId=${getUserId()}&score=${document.getElementById('score').textContent}`;
   }
@@ -32,9 +33,8 @@ export default function isMeetMonster() {
   $monsters
     .filter($monster => $monster.offsetTop === offsetTop)
     .forEach($monster => {
-      // console.log($monster);
-      if ((offsetLeft ) ||
-        $monster.offsetLeft + $monster.offsetwidth > offsetLeft && $monster.offsetLeft + $monster.offsetWidth < offsetLeft + offsetWidth) {
+      if ((offsetLeft > $monster.offsetLeft && offsetLeft < $monster.offsetLeft + $monster.offsetWidth) ||
+        offsetLeft + offsetWidth > $monster.offsetLeft && offsetLeft + offsetWidth < $monster.offsetLeft + $monster.offsetWidth) {
         meetMonster($monster);
       }
     });
