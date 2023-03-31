@@ -6,7 +6,7 @@ import {
 } from "./jump.js";
 import attack from "./attack.js";
 import {
-    getDifficulty, 
+    getDifficulty,
     getUserId
 } from "./getParameter.js";
 import makeMonsters from "./makeMonster.js";
@@ -15,28 +15,40 @@ import moveMonster from "./monsterMove.js";
 
 // main 메서드
 (() => {
-  makeMonsters(getDifficulty());
 
-  moveMonster(getDifficulty());
+    let difficulty;
 
-  const $bobby = document.getElementById('bobby');
+    switch (getDifficulty()) {
+        case "상": difficulty = 3; break;
+        case "하": difficulty = 1; break;
+        default: difficulty = 2;
+    }
 
-  document.addEventListener('keydown', e => {
-    const keyName = e.key;
-    if (keyName === 'ArrowRight' || keyName === 'ArrowLeft')
-      moveCharacter($bobby, keyName);
-    else if (keyName === 'ArrowUp')
+    makeMonsters(difficulty);
+
+    moveMonster(difficulty);
+
+    const $bobby = document.getElementById('bobby');
+
+    document.addEventListener('keydown', e => {
+        const keyName = e.key;
+
+        if (keyName === 'ArrowRight' || keyName === 'ArrowLeft')
+            moveCharacter($bobby, keyName);
+
+        else if (keyName === 'ArrowUp')
             jumpCharacter($bobby);
-    else if (keyName === 'ArrowDown')
+
+        else if (keyName === 'ArrowDown')
             downJumpCharacter($bobby);
 
-    else if (keyName === ' ')
+        else if (keyName === ' ')
             attack($bobby);
 
-    else if (keyName === '0')
+        else if (keyName === '0')
             addScore();
 
-    else if (keyName === 'z')
+        else if (keyName === 'z')
             window.location.href = `../gameover.html?userId=${getUserId()}&score=${document.getElementById('score').textContent}`;
     });
 
