@@ -1,55 +1,59 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <audio autoplay loop>
-        <source src="bgm/BubbleBobble_GameOver.ogg" type="audio/ogg">
-    </audio>
-    <link rel="stylesheet" href="CSS/gameover.css">
-    <script src="js/gameover.js" type="module" defer></script>
-    <!-- <script src="js/gameplay.js" type="module" defer></script> -->
-    <!-- <script src="js/getUserId.js" type="module" defer></script> -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <audio autoplay loop>
+    <source src="bgm/BubbleBobble_GameOver.ogg" type="audio/ogg">
+  </audio>
+  <link rel="stylesheet" href="CSS/gameover.css">
+  <script src="js/gameover.js" type="module" defer></script>
+  <!-- <script src="js/gameplay.js" type="module" defer></script> -->
+  <!-- <script src="js/getUserId.js" type="module" defer></script> -->
 
 </head>
+
 <body>
-    
-    <div class="wrap">
-        <!-- 상단 스코어 -->
-        <div class="header">
-            <ul  class="score">
-                <li id = "userId">My Score |<span></span>.</li>
-                <li>Top Score |  9999.</li>
-            </ul>
-        </div>
 
-        <!-- 메인 -->
-        <div class="main">
-            <h1 id="blinkEffect" class="end btn black">GAME OVER...</h1>
-           
-        </div>
-
-        
-
-        <!-- 하단 메뉴 -->
-        <div class="footer">
-            <ul class="menu">
-                <div class="home">
-                    <img src="img/icon/bubby-03.png" alt="bubby-03">
-                    <a href="index.html"><li class="btn start">처음으로</li></a>
-                    
-                </div>
-                
-                <div class="replay">
-                    <img src="img/icon/bobby05.png" alt="bobby05">
-                    <li><button class="btn" id="restart">다시시작</button></li>
-                </div>
-            </ul>
-        </div>
+  <div class="wrap">
+    <!-- 상단 스코어 -->
+    <div class="header">
+      <ul class="score">
+        <li id="userId">My Score |<span></span>.</li>
+        <li>Top Score | 9999.</li>
+      </ul>
     </div>
 
+    <!-- 메인 -->
+    <div class="main">
+      <h1 id="blinkEffect" class="end btn black">GAME OVER...</h1>
+
+    </div>
+
+
+
+    <!-- 하단 메뉴 -->
+    <div class="footer">
+      <ul class="menu">
+        <div class="home">
+          <img src="img/icon/bubby-03.png" alt="bubby-03">
+          <a href="index.html">
+            <li class="btn start">처음으로</li>
+          </a>
+
+        </div>
+
+        <div class="replay">
+          <img src="img/icon/bobby05.png" alt="bobby05">
+          <li><button class="btn" id="restart">다시시작</button></li>
+        </div>
+      </ul>
+    </div>
+  </div>
+
 </body>
+
 </html>
