@@ -63,6 +63,7 @@ function touchesMonster($bubble, $monster) {
         $monsters.forEach($monster => {
           if (touchesMonster($bubble, $monster)) {
             touchFlag = true;
+            $monster.innerHTML='div.inBubble';
             $monster.classList.add('getBubbled');
             return;
           }
@@ -85,6 +86,7 @@ function touchesMonster($bubble, $monster) {
         $monsters.forEach($monster => {
           if (touchesMonster($bubble, $monster)) {
             touchFlag = true;
+            $monster.innerHTML=`<div class="inBubble"></div>`;
             $monster.classList.add('getBubbled');
             return;
           }
