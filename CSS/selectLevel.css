@@ -17,7 +17,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.title #userId{
+.title #userIdShow{
   color: aqua;
 }
 
