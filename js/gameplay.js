@@ -33,6 +33,22 @@ import moveMonster from "./monsterMove.js";
 
     const $bobby = document.querySelector('.bobby');
 
+    const $char = [...document.querySelectorAll('.char')];
+console.log($bobby);
+// 로컬스토리지
+    localStorage.setItem("Bo3", $bobby);
+    const bo = localStorage.getItem("Bo3");
+    console.log(bo);
+
+    $char[1].onclick = (e) => {
+        $bobby.style.backgroundImage = 'url(../img//icon/bubby01.png)';
+    }
+    // sessionStorage.setItem('bobby2'
+    // , $bobby.style.backgroundImage= 'url(../img//icon/bubby01.png)');
+
+    // var Bo2 = sessionStorage.getItem('bobby2');
+    // console.log('세션2 : ' + Bo2);
+
     document.addEventListener('keydown', e => {
         const keyName = e.key;
 
