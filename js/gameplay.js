@@ -31,7 +31,7 @@ import moveMonster from "./monsterMove.js";
 
     moveMonster(difficulty);
 
-    const $bobby = document.getElementById('bobby');
+    const $bobby = document.querySelector('.bobby');
 
     document.addEventListener('keydown', e => {
         const keyName = e.key;

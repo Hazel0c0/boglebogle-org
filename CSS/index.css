@@ -60,6 +60,34 @@
   align-self: flex-end;
 }
 
+/* 캐릭터 선택 */
+.selectChar{
+  display: flex;
+  background-color: rgba(35, 35, 35, 0.7);
+  border-radius: 40px;
+  border: 5px dashed wheat;
+  padding: 20px 30px;
+}
+.char {
+  width: 120px;
+  height: 120px;
+  margin: 35px;
+  cursor: pointer;
+}
+.char:hover {
+  transform: scale(1.6);
+}
+.char1{
+  background: url(../img/icon/bobby06.png) no-repeat center / cover;
+}
+.char2{
+  
+  background: url(../img/icon/bubby06.png) no-repeat center / cover;
+}
+.char3{
+  background: url(../img/icon/Kirby-Transparent-Background.png) no-repeat center / cover;
+
+}
 
 /* 닉네임 입력 */
 
