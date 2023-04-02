@@ -12,8 +12,8 @@ function jumpCharacter({style, offsetTop}) {
         case 'url("../img/icon/bubby06.png")':
             style.backgroundImage = 'url(../img/icon/bubby02.png)';
             break;
-        case 'url("../img/icon/Kirby-Transparent-Background.png")':
-            style.backgroundImage = 'url(****************여기에 점프하고 있는 커비 사진 경로 넣어주세요****************)';
+        case 'url("../img/icon/Kirby_right.png")':
+            style.backgroundImage = 'url(../img/icon/Kirby_jump.png)';
             break;
         default:
             style.backgroundImage = 'url(../img/icon/bobby02.png)';
@@ -37,8 +37,8 @@ function downJumpCharacter({style, offsetTop}) {
         case 'url("../img/icon/bubby06.png")':
             style.backgroundImage = 'url(../img/icon/bubby02.png)';
             break;
-        case 'url("../img/icon/Kirby-Transparent-Background.png")':
-            style.backgroundImage = 'url(****************여기에 점프하고 있는 커비 사진 경로 넣어주세요****************)';
+        case 'url("../img/icon/Kirby_right.png")':
+            style.backgroundImage = 'url(../img/icon/Kirby_left.png)';
             break;
         default:
             style.backgroundImage = 'url(../img/icon/bobby02.png)';
@@ -58,8 +58,8 @@ function jumpEnd(style) {
             case 'url("../img/icon/bubby06.png")':
                 style.backgroundImage = 'url(../img/icon/bubby01.png)';
                 break;
-            case 'url("../img/icon/Kirby-Transparent-Background.png")':
-                style.backgroundImage = 'url(****************여기에 오른쪽 보고있는 커비 사진 경로 넣어주세요****************)';
+            case 'url("../img/icon/Kirby_right.png")':
+                style.backgroundImage = 'url(../img/icon/Kirby_right.png)';
                 break;
             default:
                 style.backgroundImage = 'url(../img/icon/bobby01.png)';

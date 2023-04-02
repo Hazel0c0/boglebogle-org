@@ -11,8 +11,8 @@ export default function attack({
         case 'url("../img/icon/bubby06.png")':
             style.backgroundImage = 'url(../img/icon/bubby01.png)';
             break;
-        case 'url("../img/icon/Kirby-Transparent-Background.png")':
-            style.backgroundImage = 'url(****************여기에 오른쪽 보고있는 있는 커비 사진 경로 넣어주세요****************)';
+        case 'url("../img/icon/Kirby_right.png")':
+            style.backgroundImage = 'url(../img/icon/Kirby_right.png)';
             break;
         default:
             style.backgroundImage = 'url(../img/icon/bobby01.png)';
@@ -40,8 +40,8 @@ function makeBubble(offsetTop, offsetLeft, style) {
     case 'url("../img/icon/bubby06.png")':
       style.backgroundImage = 'url(../img/icon/bubby-03.png)';
       break;
-    case 'url("../img/icon/Kirby-Transparent-Background.png")':
-      style.backgroundImage = 'url(****************여기에 공격하고 있는 커비 사진 경로 넣어주세요****************)';
+    case 'url("../img/icon/Kirby_right.png")':
+      style.backgroundImage = 'url(../img/icon/Kirby_att.png)';
       break;
     default:
       style.backgroundImage = 'url(../img/icon/bobby03.png)';
