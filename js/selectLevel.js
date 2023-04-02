@@ -46,8 +46,8 @@ export default function selectLevel() {
         case 'url("../img/icon/bubby06.png")':
             $character.style.backgroundImage = 'url(../img/icon/bubby01.png)';
             break;
-        case 'url("../img/icon/Kirby-Transparent-Background.png")':
-            $character.style.backgroundImage = 'url(***************여기에 오른쪽 보고있는 커비 이미지 경로 넣어주세요*****************)';
+        case 'url("../img/icon/Kirby_right.png")':
+            $character.style.background = 'url(../img/icon/Kirby_left.png) no-repeat center / cover';
             break;
     }
 }
