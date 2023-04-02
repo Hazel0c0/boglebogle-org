@@ -8,9 +8,9 @@ import attack from "./attack.js";
 import makeMonsters from "./makeMonster.js";
 import moveMonster from "./monsterMove.js";
 
-export default function gamestart(difficulty) {
+export default function gamestart(difficulty, monsterImgSrc) {
 
-    makeMonsters(difficulty);
+    makeMonsters(difficulty, monsterImgSrc);
 
     moveMonster(difficulty);
 
