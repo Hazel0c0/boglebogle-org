@@ -14,7 +14,6 @@
 
   <!-- css -->
   <link rel="stylesheet" href="../CSS/selectLevel.css">
-  <link rel="icon" type="image/png" href="img/icon/bubbycon.png">
 
   <!-- js -->
   <script src="../js/selectLevel.js" type="module" defer></script>
@@ -22,20 +21,21 @@
 </head>
 
 <body>
-  <h1 class="title btn"><span id="userIdShow"></span><span>님의 난이도 선택</span></h1>
+  <div class="selectLevel">
+    <h1 class="title btn"><span id="userIdShow"></span><span>님의 난이도 선택</span></h1>
 
-  <form action="gameplay.html">
-    <ul class="levels">
+    <form action="gameplay.html">
+      <ul class="levels">
 
-      <input type="text" id="userId" name="userId" value="" style="display: none;">
+        <input type="text" id="userId" name="userId" value="" style="display: none;">
 
-      <li><input class="level btn" type="submit" href="gameplay.html" name="difficulty" value="상"></li>
-      <li><input class="level btn" type="submit" href="gameplay.html" name="difficulty" value="중"></li>
-      <li><input class="level btn" type="submit" href="gameplay.html" name="difficulty" value="하"></li>
+        <li><input class="level btn" type="submit" href="gameplay.html" name="difficulty" value="상"></li>
+        <li><input class="level btn" type="submit" href="gameplay.html" name="difficulty" value="중"></li>
+        <li><input class="level btn" type="submit" href="gameplay.html" name="difficulty" value="하"></li>
 
-    </ul>
-  </form>
-
+      </ul>
+    </form>
+  </div>
 </body>
 
 </html>

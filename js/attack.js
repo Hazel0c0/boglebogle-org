@@ -67,7 +67,7 @@ function touchesMonster($bubble, $monster) {
           }
         });
 
-        if (touchFlag) return;
+        if (touchFlag) $bubble.parentElement.removeChild($bubble);
 
         $bubble.style.left = `${$bubble.offsetLeft - i}px`;
 
@@ -90,7 +90,7 @@ function touchesMonster($bubble, $monster) {
           }
         });
 
-        if (touchFlag) return;
+        if (touchFlag) $bubble.parentElement.removeChild($bubble);
 
         $bubble.style.left = `${$bubble.offsetLeft + i}px`;
 
