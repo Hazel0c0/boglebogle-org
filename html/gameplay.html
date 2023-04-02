@@ -8,12 +8,13 @@
   <title>bo-gle-bo-gle</title>
 
   <!-- audio -->
-  <audio autoplay loop>
+  <!-- <audio autoplay loop>
     <source src="../bgm/BubbleBobble_MainTheme.ogg" type="audio/ogg">
-  </audio>
+  </audio> -->
 
   <!-- css -->
   <link rel="stylesheet" href="../CSS/gameplay.css">
+  <link rel="stylesheet" href="../CSS/selectLevel.css">
 
   <!-- js -->
   <script src="../js/gameplay.js" type="module" defer></script>
@@ -21,6 +22,20 @@
 </head>
 
 <body>
+
+  <div class="selectLevel">
+    <h1 class="title btn"><span id="userIdShow"></span><span>님의 난이도 선택</span></h1>
+
+    <ul class="levels">
+
+      <input type="text" id="userId" name="userId" value="" style="display: none;">
+
+      <li><button class="level btn">상</button></li>
+      <li><button class="level btn">중</button></li>
+      <li><button class="level btn">하</button></li>
+
+    </ul>
+  </div>
 
   <div class="wrap">
     <div class="play-ground">
