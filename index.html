@@ -8,9 +8,17 @@
   <title>bo-gle-bo-gle</title>
   <link rel="import" href="/html/gameplay.html">
 
+  <!-- audio -->
+  <audio autoplay loop>
+    <source src="bgm/BubbleBobble_GameStart.ogg" type="audio/ogg">
+  </audio>
+  
   <!-- index.css -->
   <link rel="stylesheet" href="CSS/index.css">
-  <link rel="icon" type="image/png" href="img/icon/bubbycon.png">
+
+  <!-- favicon -->
+  <link rel="icon" type="image/x-icon" href="img/icon/bubbycon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="img/icon/bubbycon.png">
 
   <!-- js -->
   <script src="js/index.js" type="module" defer></script>
@@ -35,7 +43,7 @@
       <div class="showSelectedChar"></div>
 
       <div class="input-player">
-        <form id="inputId" action="html/selectLevel.html" method="get">
+        <form id="inputId" action="html/gameplay.html" method="get">
           <div class="input">
             <input type="text" id="nickName" class="input1 blink" name="userId" placeholder=" ★ 닉네임 입력 후 START ★ ">
             <input type="submit" id="start" class="start btn" value="game start">

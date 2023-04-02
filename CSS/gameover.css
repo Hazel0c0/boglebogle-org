@@ -52,7 +52,6 @@ audio {
 /* 메인 */
 .main{
     width: fit-content;
-    height: 100vh;
 
     position: absolute;
     top: 18%;

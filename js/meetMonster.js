@@ -5,6 +5,7 @@ import {
 
 function meetMonster($monster) {
 
+  console.log("이벤트 발생");
   if ($monster.classList.contains('getBubbled')) {
     $monster.classList.add('die');
     setTimeout(() => {
@@ -18,23 +19,23 @@ function meetMonster($monster) {
 }
 
 export default function isMeetMonster() {
-  const $bobby = document.getElementById('bobby');
   const $monsters = [...document.querySelectorAll('.monster')];
-  const {
-    offsetLeft,
-    offsetTop,
-    offsetWidth
-  } = $bobby;
 
   // 캐릭터와 몬스터가 만나는 것 감지 순서대로 
-  // 기준은 캐릭터와 층이 같은 몬스터
-  //    왼쪽에서 오른쪽
-  //    오른쪽에서 왼쪽
   $monsters
-    .filter($monster => $monster.offsetTop === offsetTop)
     .forEach($monster => {
-      if ((offsetLeft > $monster.offsetLeft && offsetLeft < $monster.offsetLeft + $monster.offsetWidth) ||
-        offsetLeft + offsetWidth > $monster.offsetLeft && offsetLeft + offsetWidth < $monster.offsetLeft + $monster.offsetWidth) {
+      
+      const {
+        offsetLeft,
+        offsetTop,
+        offsetWidth,
+        offsetHeight
+      } = document.getElementById('bobby');
+
+      if (offsetLeft + offsetWidth - $monster.offsetLeft > 0 &&
+          $monster.offsetLeft + $monster.offsetWidth - offsetLeft > 0 &&
+          offsetTop + offsetHeight - $monster.offsetTop > 0 &&
+          $monster.offsetTop + $monster.offsetHeight - offsetTop > 0) {
         meetMonster($monster);
       }
     });

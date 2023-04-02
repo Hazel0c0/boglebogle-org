@@ -9,13 +9,13 @@ export default function moveMonster(difficulty) {
     const $monsters = [...document.querySelectorAll('.monster:not(.getBubbled)')];
 
     $monsters.forEach($monster => {
-      const moveRange = Math.floor(Math.random() * 200 * difficulty + 20);
+      const moveRange = Math.floor(Math.random() * 100 * difficulty);
 
       const indexOfMonster = $monsters.indexOf($monster);
 
       const triFunction = indexOfMonster % 2 == 0 ? Math.sin(moveTime) : Math.cos(moveTime);
 
-      let moveAmount = $monster.offsetLeft + triFunction * moveRange * difficulty * 3;
+      const moveAmount = $monster.offsetLeft + triFunction * moveRange * difficulty * 2;
 
       if (moveAmount > $monster.parentElement.offsetWidth - 50) {
         $monster.style.left = `${$monster.parentElement.offsetWidth - 100}px`;
@@ -29,8 +29,8 @@ export default function moveMonster(difficulty) {
 
       $monster.style.left = `${moveAmount}px`;
       
-      isMeetMonster();
     });
-    moveTime++;
-  }, 1000);
+    isMeetMonster();
+    moveTime += 0.25;
+  }, 160);
 }

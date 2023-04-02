@@ -14,9 +14,10 @@ import selectCharacter from "./selectCharacter.js";
     $start.onmousedown = removeHover;
     $start.onmouseout = removeHover;
 
+
     // 캐릭터 선택
     selectCharacter();
-})();
+
 
 // const $char = [...document.querySelectorAll('.char')];
 // const $bobby = document.querySelector('.bobby');
@@ -46,4 +47,7 @@ import selectCharacter from "./selectCharacter.js";
 //         if($("#nickName").val().length==0){alert("닉네임을 입력하세요"); $("#nickName").focus();return false;}
 //     });
 // });
+
+
+})();
 
