@@ -28,7 +28,7 @@ export default function gamestart(difficulty) {
         else if (keyName === 'ArrowDown')
             downJumpCharacter($bobby);
 
-        // 방울의 갯수가 3개 이하로 규제
+        // 방울의 갯수 제한
         else if (keyName === ' ' && document.querySelectorAll('.bubble').length < 4 - difficulty) {
             attack($bobby);
         }
