@@ -22,11 +22,12 @@ audio {
 }
 
 /* 캐릭터 아이콘 주변의 불필요한 공백 제거 */
-#bobby {
+.bobby {
     background: url(../img/icon/bobby01.png) no-repeat center / 100px 100px;
     width: 50px;
     height: 50px;
     transform: scaleX(-1);
+    
 
     position: absolute;
     top: 650px;

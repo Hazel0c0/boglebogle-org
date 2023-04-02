@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>bo-gle-bo-gle</title>
+  <link rel="import" href="/html/gameplay.html">
 
   <!-- audio -->
   <audio autoplay loop>
@@ -20,7 +21,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="img/icon/bubbycon.png">
 
   <!-- js -->
-  <script src="js/index.js" defer></script>
+  <script src="js/index.js" type="module" defer></script>
 
 </head>
 
@@ -32,6 +33,15 @@
         <h1 class="btn">보 글 보 글</h1>
         <img src="img/icon/bubby02.png" alt="bubby 아이콘">
       </div>
+
+      <div class="selectChar">
+        <div class="char1 char" style="background-image: url(../img/icon/bobby06.png)"></div>
+        <div class="char2 char" style="background-image: url(../img/icon/bubby06.png)"></div>
+        <div class="char3 char" style="background-image: url(../img/icon/Kirby-Transparent-Background.png)"></div>
+      </div>
+
+      <div class="showSelectedChar"></div>
+
       <div class="input-player">
         <form id="inputId" action="html/gameplay.html" method="get">
           <div class="input">
