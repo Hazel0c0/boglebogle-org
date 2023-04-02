@@ -14,6 +14,8 @@ import moveMonster from "./monsterMove.js";
 // main 메서드
 (() => {
 
+    console.log(window.localStorage.getItem('character'));
+
     let difficulty;
 
     switch (getDifficulty()) {

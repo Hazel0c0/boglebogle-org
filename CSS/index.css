@@ -78,15 +78,22 @@
   transform: scale(1.6);
 }
 .char1{
-  background: url(../img/icon/bobby06.png) no-repeat center / cover;
+  background: no-repeat center / cover;
 }
 .char2{
   
-  background: url(../img/icon/bubby06.png) no-repeat center / cover;
+  background: no-repeat center / cover;
 }
 .char3{
-  background: url(../img/icon/Kirby-Transparent-Background.png) no-repeat center / cover;
+  background: no-repeat center / cover;
+}
 
+/* 선택된 캐릭터 보여주는 위치 */
+.showSelectedChar {
+  width: 100px;
+  height: 100px;
+
+  background: no-repeat center / cover;
 }
 
 /* 닉네임 입력 */

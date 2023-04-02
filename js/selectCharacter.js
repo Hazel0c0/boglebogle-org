@@ -24,3 +24,15 @@
 //   console.log(char.style.background);
 // }
 // $bobby.style.background=selec;
+export default function selectCharacter() {
+  const $characters = [...document.querySelectorAll('.char')];
+  const $showCharacterZone = document.querySelector('.showSelectedChar');
+
+  $characters.forEach($char => {
+    $char.onclick = e => {
+      const characterUrl = $char.style.backgroundImage
+      $showCharacterZone.style.backgroundImage = characterUrl;
+      window.localStorage.setItem('character', characterUrl);
+    }
+  })
+}

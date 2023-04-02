@@ -13,8 +13,7 @@
   <link rel="icon" type="image/png" href="img/icon/bubbycon.png">
 
   <!-- js -->
-  <script src="js/index.js" defer></script>
-  <script src="js/selectCharacter.js" defer></script>
+  <script src="js/index.js" type="module" defer></script>
 
 </head>
 
@@ -28,10 +27,12 @@
       </div>
 
       <div class="selectChar">
-        <div class="char1 char"></div>
-        <div class="char2 char"></div>
-        <div class="char3 char"></div>
+        <div class="char1 char" style="background-image: url(../img/icon/bobby06.png)"></div>
+        <div class="char2 char" style="background-image: url(../img/icon/bubby06.png)"></div>
+        <div class="char3 char" style="background-image: url(../img/icon/Kirby-Transparent-Background.png)"></div>
       </div>
+
+      <div class="showSelectedChar"></div>
 
       <div class="input-player">
         <form id="inputId" action="html/selectLevel.html" method="get">
