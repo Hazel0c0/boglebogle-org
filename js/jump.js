@@ -13,7 +13,7 @@ function jumpCharacter({style, offsetTop}) {
             style.backgroundImage = 'url(../img/icon/bubby02.png)';
             break;
         case 'url("../img/icon/Kirby_right.png")':
-            style.backgroundImage = 'url(../img/icon/Kirby_jump.png)';
+            style.backgroundImage = 'url(../img/icon/kirby_jump.png)';
             break;
         default:
             style.backgroundImage = 'url(../img/icon/bobby02.png)';
