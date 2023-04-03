@@ -8,10 +8,10 @@
 
 ### weekend
 
-gameplay.html과 selectLevel.html 합치기
-몬스터 사진 설정 기능 구현
-몬스터 움직임 변수 수정
-충돌 알고리즘 수정
+- gameplay.html과 selectLevel.html 합치기
+- 몬스터 사진 설정 기능 구현
+- 몬스터 움직임 변수 수정
+- 충돌 알고리즘 수정
 
 ### 5day
 
