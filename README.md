@@ -1,16 +1,13 @@
 
 # 프론트 프로젝트 : 보글보글
 
-<center>
+<div style="align: center">
 
 ![로고.png](img%2F%EB%A1%9C%EA%B3%A0.png)
 
-</center>
-<center>
-
 [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FSemiProject-JS%2Fbo-gle-bo-gle&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
-</center>
+</div>
 
 ---
 
