@@ -1,7 +1,7 @@
 
 # 프론트 프로젝트 : 보글보글
 
-<div style="align: center">
+<div style="text-align: center">
 
 ![로고.png](img%2F%EB%A1%9C%EA%B3%A0.png)
 
