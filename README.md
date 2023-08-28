@@ -32,7 +32,9 @@
   * 각 페이지들 연결
 * 채지원 
   * https://github.com/Hazel0c0
-  * 
+  * 난이도 선택 페이지 구성 및 디자인
+  * 캐릭터 공격 모션
+  * 몬스터 이동 및 처치 모션
 * 신지송 
   * https://github.com/sssonggg
   * 
